@@ -4,11 +4,11 @@
     position: absolute;
     display: block;
     cursor: pointer;
-    height: 60px;
-    width: 60px;    
+    height: 50px;
+    width: 50px;    
     padding: 10px;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    right: 10px;
     background-color: $color-primary;
     border-radius: 5px;
     @media (min-width: $break-lrg) {
@@ -17,15 +17,30 @@
 }
 .bar {
     display: block;
-    width: 30px;
-    height: 3px;
-    margin: 8px auto;
+    width: 25px;
+    height: 2px;
+    margin: 6px auto;
     background-color: $white;
+}
+
+// Temporary small nav bar
+
+.nav-ul-small {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: .8rem;
+    margin: 0;
 }
 
 // Main body
 
 .nav-bar {
+    background-color: $color-primary;
+    color: $white;
+    background-image: linear-gradient(to right, $color-primary 10%, rgba(0,0,0, .5));
     @include mq(large) {
     float: left;
     position: -webkit-sticky;
@@ -37,8 +52,6 @@
     width: 12%;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: $color-primary;
-    background-image: linear-gradient(to right, $color-primary 10%, rgba(0,0,0, .5));
     border-right: 1px solid $black;
     overflow: hidden;
     }
@@ -47,25 +60,32 @@
 //logo top 
 
 .nav-logo {
+    @include mq(large) {
         @include rounded(150px);
         @include center;
         min-width: 95px;
         background-color: $color-secondary;
         box-shadow: 10px 10px 30px rgba($white, .9);
+    }
 }
 
 .logo-text {
-    @include heading-large(3rem, 5rem);
-        letter-spacing: 6px;
-        padding: 20px;
-        margin: 0;
+    @include heading-large(1.5rem, 3rem);
+    letter-spacing: 6px;
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    @include mq(large) {
+        @include heading-large(3rem, 5rem);
+
+    }
+    @include mq(x-large) {
+        @include heading-large(4rem, 4.5rem);
         width: 100%;
-        height: auto;
-        @include mq(x-large) {
-            @include heading-large(4rem, 4.5rem);
-            padding: 35px;
-        }
+        padding: 35px;
+    }
 }
+
 
 // Nav list
 

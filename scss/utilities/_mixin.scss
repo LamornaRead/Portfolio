@@ -58,6 +58,7 @@
 
 @mixin box-purple($min:null, $max:null) {
    background-color: $color-primary;
+   background-image: linear-gradient($color-primary 50%, rgba(0,0,0, .2));
    color: $white;
    padding: 20px;
    min-height: $min;

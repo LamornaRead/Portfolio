@@ -625,11 +625,11 @@ a {
   position: absolute;
   display: block;
   cursor: pointer;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   padding: 10px;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  right: 10px;
   background-color: #5b308b;
   border-radius: 5px;
 }
@@ -644,14 +644,32 @@ a {
 /* line 18, ../Portfolio/scss/sections/_nav.scss */
 .bar {
   display: block;
-  width: 30px;
-  height: 3px;
-  margin: 8px auto;
+  width: 25px;
+  height: 2px;
+  margin: 6px auto;
   background-color: #fff;
 }
 
+/* line 28, ../Portfolio/scss/sections/_nav.scss */
+.nav-ul-small {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: .8rem;
+  margin: 0;
+}
+
+/* line 40, ../Portfolio/scss/sections/_nav.scss */
+.nav-bar {
+  background-color: #5b308b;
+  color: #fff;
+  background-image: linear-gradient(to right, #5b308b 10%, rgba(0, 0, 0, 0.5));
+}
+
 @media (min-width: 992px) {
-  /* line 28, ../Portfolio/scss/sections/_nav.scss */
+  /* line 40, ../Portfolio/scss/sections/_nav.scss */
   .nav-bar {
     float: left;
     position: -webkit-sticky;
@@ -663,65 +681,76 @@ a {
     width: 12%;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #5b308b;
-    background-image: linear-gradient(to right, #5b308b 10%, rgba(0, 0, 0, 0.5));
     border-right: 1px solid #000;
     overflow: hidden;
   }
 }
 
-/* line 49, ../Portfolio/scss/sections/_nav.scss */
-.nav-logo {
-  height: auto;
-  width: 100%;
-  max-width: 150px;
-  border-radius: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 95px;
-  background-color: #291e39;
-  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.9);
+@media (min-width: 992px) {
+  /* line 62, ../Portfolio/scss/sections/_nav.scss */
+  .nav-logo {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 95px;
+    background-color: #291e39;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.9);
+  }
 }
 
-/* line 57, ../Portfolio/scss/sections/_nav.scss */
+/* line 72, ../Portfolio/scss/sections/_nav.scss */
 .logo-text {
   text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   font-weight: 600;
   margin: 0;
   letter-spacing: 6px;
   padding: 20px;
   margin: 0;
-  width: 100%;
   height: auto;
 }
 
+@media (min-width: 992px) {
+  /* line 72, ../Portfolio/scss/sections/_nav.scss */
+  .logo-text {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
 @media (min-width: 1200px) {
-  /* line 57, ../Portfolio/scss/sections/_nav.scss */
+  /* line 72, ../Portfolio/scss/sections/_nav.scss */
   .logo-text {
     text-transform: uppercase;
     font-size: 4rem;
     line-height: 4.5rem;
     font-weight: 600;
     margin: 0;
+    width: 100%;
     padding: 35px;
   }
 }
 
-/* line 72, ../Portfolio/scss/sections/_nav.scss */
+/* line 92, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul {
   margin-top: 80px;
 }
 
-/* line 75, ../Portfolio/scss/sections/_nav.scss */
+/* line 95, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul li {
   line-height: 1.2rem;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 73, ../Portfolio/scss/utilities/_mixin.scss */
+/* line 74, ../Portfolio/scss/utilities/_mixin.scss */
 .nav-li:hover {
   text-decoration: underline;
   text-shadow: #fff 1px 0 10px;
@@ -781,6 +810,7 @@ a {
     box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
     border: 1px solid #291e39;
     background-color: #5b308b;
+    background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
     color: #fff;
     padding: 20px;
     font-size: 0.8rem;
@@ -818,6 +848,7 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #291e39;
   background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
   min-height: 250px;
@@ -995,6 +1026,7 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #291e39;
   background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
   min-height: 250px;
@@ -1023,6 +1055,7 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #291e39;
   background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
   min-height: 340px;
@@ -1041,7 +1074,7 @@ a {
   margin-top: 40px;
 }
 
-/* line 73, ../Portfolio/scss/utilities/_mixin.scss */
+/* line 74, ../Portfolio/scss/utilities/_mixin.scss */
 .score-link:hover {
   text-decoration: underline;
   text-shadow: #fff 1px 0 10px;
@@ -1129,6 +1162,7 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #291e39;
   background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
   display: flex;
@@ -1164,7 +1198,7 @@ a {
   outline: none;
 }
 
-/* line 135, ../Portfolio/scss/utilities/_mixin.scss */
+/* line 136, ../Portfolio/scss/utilities/_mixin.scss */
 .name:focus, .email:focus, .subject:focus, .message:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
