@@ -1,0 +1,25 @@
+//content 
+
+.about-section {
+    @include box;
+    @include box-purple(250px, 360px);
+    @include mq(small) {
+        padding: 40px;
+    }
+    @include mq(large) {
+        width: 49%;
+        text-align: center;
+    }
+}
+
+//layout
+
+.about {
+    @include flexbox;
+}
+.about-heading {
+    width: 100%; 
+    @include mq(large) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,139 @@
+// Media quiries
+
+@mixin mq($break) {
+    @if $break == "x-small" {
+       @media (min-width: 1px) and (max-width: $break-sml) {
+          @content;
+       }
+    }
+    @else if $break == "small" {
+      @media (min-width: $break-sml) {
+         @content;
+      }
+   }
+    @else if $break == "medium" {
+       @media (min-width: $break-med) {
+          @content;
+       }
+    }
+    @else if $break == "large" {
+       @media (min-width: $break-lrg) {
+          @content;
+       }
+    }
+    @else if $break == "x-large" {
+       @media (min-width: $break-xlrg) {
+          @content;
+       }
+    }
+}
+
+// design mixins
+
+
+@mixin center {
+   margin-right: auto;
+   margin-left: auto;
+}
+@mixin center-box{
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+@mixin rounded($w) {
+   height: auto;
+   width: 100%;
+   max-width: $w;
+   border-radius: 50%;
+}
+
+@mixin box {
+   height: auto;
+   width: 100%;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
+   border: 1px solid $color-secondary;
+}
+
+@mixin box-purple($min:null, $max:null) {
+   background-color: $color-primary;
+   color: $white;
+   padding: 20px;
+   min-height: $min;
+   max-height: $max;
+}
+
+@mixin bk-image($h) {
+   height: $h;
+   background-position: center;
+   background-size: cover;
+}
+ @mixin link-hover {
+   &:hover {
+      text-decoration: underline;
+      text-shadow: $white 1px 0 10px;
+   }
+ }
+
+// flex 
+
+@mixin flex-center{
+   display: flex;
+   justify-content: center;
+}
+
+@mixin flexbox{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   @include mq(large) {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+}
+
+// headings 
+
+@mixin heading-small($s, $h:null) {
+   text-transform: uppercase;
+   font-size: $s;
+   line-height: $h;
+   font-weight: $font-weight--light;
+   margin: 0;
+}
+@mixin heading($s, $h:null) {
+   text-transform: uppercase;
+   font-size: $s;
+   line-height: $h;
+   font-weight: $font-weight--regular;
+   margin: 0;
+}
+@mixin heading-large($s, $h:null) {
+   text-transform: uppercase;
+   font-size: $s;
+   line-height: $h;
+   font-weight: $font-weight--bold;
+   margin: 0;
+}
+
+// Paragraphs
+
+@mixin p($f, $h, $s:null) {
+   font-size: $f;
+   line-height: $h;
+   letter-spacing: $s;
+}
+
+//form 
+
+@mixin form {
+   width: 100%;
+   margin: 20px 0;
+   padding: 12px 20px;
+   outline: none;
+   &:focus {
+       box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+       border: 1px solid rgba(81, 203, 238, 1);
+   }
+}

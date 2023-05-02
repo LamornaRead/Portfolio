@@ -1,0 +1,37 @@
+//main
+
+.intro-item {
+    @include box;
+    @include box-purple(250px, 400px);
+    width: 100%;
+    @include mq(large) {
+        margin-bottom: 30px;
+        text-align: center;
+        & {
+            p {
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.scs-item {
+    @include box;
+    @include box-purple(340px, 400px);
+    @include mq(large) {
+        width: 49%
+    }
+}
+
+.total-score {
+    margin-top: 40px;
+}
+
+.score-link {
+    @include link-hover;
+}
+// layout 
+
+.scs-section {
+    @include flexbox;
+}

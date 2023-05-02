@@ -1,0 +1,48 @@
+//main
+
+.port-item {
+    @include box;
+    border: 1px solid $color-primary;
+    @include mq(large) {
+        width: 49%;
+    }
+    @include mq(x-large) {
+        width: 30%;
+    }
+}
+
+.port-item:hover {
+    background-color: $light-purple;
+}
+//project image
+
+.project-img {
+    @include flex-center;
+    @include bk-image(200px);
+}
+.text-img {
+    @include heading(1.6rem);
+    @include center;
+    @include center-box;
+    color: $white;
+}
+
+//section Content 
+.port-text {
+    padding: 40px 20px;  
+}
+.pro-heading {
+   @include heading(1.2rem);
+}
+.view-heading {
+    @include heading(1rem, 1.8rem);
+    &:hover {
+        text-decoration: underline;;
+    }
+}
+
+//layout 
+
+.port-section {
+    @include flexbox;
+}

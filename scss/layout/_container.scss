@@ -1,0 +1,28 @@
+.container-main {
+     @include mq(large) {
+          margin-left: 12%;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 0;
+     }
+}
+
+.container {
+     @include center;
+     @extend %clearfix;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     width: 80%;
+     @include mq(large) {
+          height: 100vh;
+     }
+}
+
+.container-heading {
+     width: 100%;
+     margin-bottom: 40px;
+     @include mq(large) {
+         text-align: center;
+         margin-bottom: 60px
+     }
+ }

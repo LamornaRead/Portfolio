@@ -1,0 +1,89 @@
+// main 
+
+.section {
+    @include box;
+    padding: 20px;
+    @include mq(large) {
+        height: 100%;
+    }
+}
+
+.email-me {
+    text-transform: none;
+    margin: 30px 0;
+}
+.phone-me {
+    margin: 30px 0;
+}
+
+//main layout 
+
+.contact-section {
+    @include flexbox;
+}
+.contact-item-1 {
+    @include mq(large) {
+        width: 29%;
+    }
+}
+.contact-item-2 {
+    @include mq(large) {
+        width: 69%;
+    }
+}
+
+// form 
+
+.contact-form {
+    @include box;
+    @include box-purple;
+    @include flexbox;
+    @include mq(large) {
+        height: 100%;
+    }
+}
+
+.form-heading {
+    margin-bottom: 30px;
+}
+.name, .email, .subject, .message {
+    @include form;
+}
+ .message {
+    resize: none;
+    height: 200px;
+}
+
+.submit-btn {
+    @include heading(1.3rem, 1.6rem);
+    background-color: $color-secondary;
+    color: $white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    &:hover {
+        text-shadow: $white 1px 0 10px;
+        box-shadow: 0 0 20px 10px rgba($color: $white, $alpha: .6);
+    }
+}
+
+//form layout
+
+.row {
+    @include mq(large) {
+        width: 49%;
+    }
+}
+
+.row-full {
+    @include mq(large) {
+        width: 100%;
+    }
+}
+
+//bottom 
+
+.top {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

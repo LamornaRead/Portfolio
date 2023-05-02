@@ -1,0 +1,49 @@
+//main 
+.banner {
+    @include flex-center;
+    @include bk-image(100vh);
+    flex-direction: column;
+}
+
+// content 
+.info {
+    @include center;
+    @include center-box;
+    text-align: center;
+    width: 70%;
+}
+.profile-image {
+    @include center;
+    @include rounded(300px);
+    box-shadow: 10px 10px 30px rgba($white, .9);
+}
+
+.image-container {
+    @include center;
+    width: 40%;
+}
+
+.profile-text{
+    color: $white;
+    text-shadow: $black 20px 0 25px;
+    @media (min-width: 1px) and (max-width: $break-med){
+        @include box;
+        @include box-purple;
+        @include p(.8rem, 1.2rem);
+        font-weight: $font-weight--light;
+        & h2 {
+            font-size: 1.2rem;
+            font-weight: $font-weight--light;
+        } 
+    }
+    @include mq(medium){
+        margin-top: 80px;
+    }
+}
+
+.scroll {
+    color: $white;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
