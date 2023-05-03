@@ -13,9 +13,6 @@
      padding-top: 50px;
      padding-bottom: 50px;
      width: 80%;
-     @include mq(large) {
-          height: 100vh;
-     }
 }
 
 .container-heading {

@@ -459,10 +459,11 @@ a {
     font-size: 2.4rem;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 40px;
   }
 }
 
-/* line 31, ../Portfolio/scss/base/_base.scss */
+/* line 32, ../Portfolio/scss/base/_base.scss */
 .small-heading {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -473,7 +474,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 31, ../Portfolio/scss/base/_base.scss */
+  /* line 32, ../Portfolio/scss/base/_base.scss */
   .small-heading {
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -482,7 +483,7 @@ a {
   }
 }
 
-/* line 43, ../Portfolio/scss/base/_base.scss */
+/* line 44, ../Portfolio/scss/base/_base.scss */
 .section-heading {
   text-transform: uppercase;
   font-size: 1rem;
@@ -493,7 +494,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 43, ../Portfolio/scss/base/_base.scss */
+  /* line 44, ../Portfolio/scss/base/_base.scss */
   .section-heading {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -503,7 +504,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 43, ../Portfolio/scss/base/_base.scss */
+  /* line 44, ../Portfolio/scss/base/_base.scss */
   .section-heading {
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -512,7 +513,7 @@ a {
   }
 }
 
-/* line 54, ../Portfolio/scss/base/_base.scss */
+/* line 55, ../Portfolio/scss/base/_base.scss */
 .section-heading-small {
   text-transform: uppercase;
   font-size: 1rem;
@@ -523,7 +524,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 54, ../Portfolio/scss/base/_base.scss */
+  /* line 55, ../Portfolio/scss/base/_base.scss */
   .section-heading-small {
     text-transform: uppercase;
     font-size: 1rem;
@@ -533,7 +534,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 54, ../Portfolio/scss/base/_base.scss */
+  /* line 55, ../Portfolio/scss/base/_base.scss */
   .section-heading-small {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -542,7 +543,7 @@ a {
   }
 }
 
-/* line 66, ../Portfolio/scss/base/_base.scss */
+/* line 67, ../Portfolio/scss/base/_base.scss */
 .section-content {
   font-size: 0.8rem;
   line-height: 1.4rem;
@@ -550,7 +551,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 66, ../Portfolio/scss/base/_base.scss */
+  /* line 67, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -558,7 +559,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 66, ../Portfolio/scss/base/_base.scss */
+  /* line 67, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -567,7 +568,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 66, ../Portfolio/scss/base/_base.scss */
+  /* line 67, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.6rem;
@@ -575,7 +576,7 @@ a {
   }
 }
 
-/* line 82, ../Portfolio/scss/base/_base.scss */
+/* line 83, ../Portfolio/scss/base/_base.scss */
 .section-link {
   margin-top: 5%;
 }
@@ -599,21 +600,14 @@ a {
   width: 80%;
 }
 
-@media (min-width: 992px) {
-  /* line 10, ../Portfolio/scss/layout/_container.scss */
-  .container {
-    height: 100vh;
-  }
-}
-
-/* line 21, ../Portfolio/scss/layout/_container.scss */
+/* line 18, ../Portfolio/scss/layout/_container.scss */
 .container-heading {
   width: 100%;
   margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
-  /* line 21, ../Portfolio/scss/layout/_container.scss */
+  /* line 18, ../Portfolio/scss/layout/_container.scss */
   .container-heading {
     text-align: center;
     margin-bottom: 60px;
@@ -1242,12 +1236,6 @@ a {
   .row-full {
     width: 100%;
   }
-}
-
-/* line 86, ../Portfolio/scss/sections/_contact.scss */
-.top {
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
