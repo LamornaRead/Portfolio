@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const navSmall = document.querySelector('.small-nav');
+const navLink = document.querySelectorAll('.nav-li');
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -8,10 +9,9 @@ function mobileMenu() {
     navSmall.classList.toggle('active');
 };
 
+navLink.forEach(n => n.addEventListener('click', closeMenu));
 
-
-
-// $('.hamburger').on('click', function(){
-//     $(this).toggle('active');
-//     $('.small-nav').toggle('active');
-// });
+function closeMenu() {
+    hamburger.classList.remove('active');
+    navSmall.classList.remove('active');
+}
