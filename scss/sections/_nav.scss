@@ -16,33 +16,49 @@
         display: none;
     }
 }
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .bar {
     display: block;
     width: 25px;
     height: 2px;
     margin: 6px auto;
     background-color: $white;
+    transition: all 0.3s ease-in-out;
 }
 
 // Temporary small nav bar
 
-.ham-nav:hover .small-nav {
-    display: block;
-}
+// .ham-nav:hover .small-nav {
+//     display: block;
+// }
 
 .ham-logo {
     background-color: $color-secondary;
     border-bottom: 1px solid $black;
 }
 .small-nav {
-    display: none;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: -100%;
     right: 0;
     left: 0;
     color: $white;
-    background-color: darken($color-primary, $amount: 10%);
+    background-color: darken($color-primary, $amount: 10%);   
+    transition: .6s;
 }
+.small-nav.active {
+   top: 0;
+}
+
 .nav-ul-small {
     display: flex;
     flex-direction: row;
