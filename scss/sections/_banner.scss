@@ -38,6 +38,24 @@
     }
     @include mq(medium){
         margin-top: 80px;
+        & {
+            h2 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @include mq(large) {
+        & {
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
     }
 }
 

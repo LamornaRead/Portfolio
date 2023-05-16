@@ -867,9 +867,28 @@ a {
   .profile-text {
     margin-top: 80px;
   }
+  /* line 42, ../Portfolio/scss/sections/_banner.scss */
+  .profile-text h2 {
+    font-size: 1.8rem;
+  }
+  /* line 45, ../Portfolio/scss/sections/_banner.scss */
+  .profile-text p {
+    font-size: 1.4rem;
+  }
 }
 
-/* line 44, ../Portfolio/scss/sections/_banner.scss */
+@media (min-width: 992px) {
+  /* line 52, ../Portfolio/scss/sections/_banner.scss */
+  .profile-text h2 {
+    font-size: 2rem;
+  }
+  /* line 55, ../Portfolio/scss/sections/_banner.scss */
+  .profile-text p {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 62, ../Portfolio/scss/sections/_banner.scss */
 .scroll {
   color: #fff;
   width: 100%;
