@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="contact-item-2">
-                    <form class=" contact-form">
+                    <form class="form" name="contact-form" method="post" onsubmit="validateForm(); return false">
 
                         <div class="row-full form-heading">
                             <h4 class="section-heading">Send Us A Message <i class="fa-solid fa-arrow-right"></i> <i class="fa-solid fa-envelope"></i></h4>
@@ -175,26 +175,31 @@
                         <div class="row">
                             <label class="hidden" for="fname"></label>
                             <input class="name" type="text" id="fname" name="firstname" placeholder="First Name . . .">
+                            <span id="firstname-error" class="error"></span>
                         </div>
 
                         <div class="row">
                             <label class="hidden" for="lname"></label>
                             <input class="name" type="text" id="lname" name="lastname" placeholder="Last Name . . .">
+                            <span id="lastname-error" class="error"></span>
                         </div>
 
                         <div class="row-full">
                             <label class="hidden" for="email"></label>
                             <input class="email" type="email" id="email" name="email" placeholder="Email Address . . .">
+                            <span id="email-error" class="error"></span>
                         </div>
 
                         <div class="row-full">
                             <label class="hidden" for="subject"></label>
                             <input class="subject" type="text" id="subject" name="subject" placeholder="Subject . . ."></textarea>
+                            <span id="subject-error" class="error"></span>
                         </div>
 
                         <div class="row-full">
                             <label class="hidden" for="message"></label>
                             <textarea class="message" id="message" name="message" placeholder="Message . . ."></textarea>
+                            <span id="message-error" class="error"></span>
                         </div>
 
                          <div class="row-full">
@@ -217,5 +222,6 @@
     </footer>
     <script src="js/jquery3.6.4.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

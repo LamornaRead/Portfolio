@@ -1211,7 +1211,7 @@ a {
 }
 
 /* line 37, ../Portfolio/scss/sections/_contact.scss */
-.contact-form {
+.form {
   height: auto;
   width: 100%;
   margin-bottom: 20px;
@@ -1229,7 +1229,7 @@ a {
 
 @media (min-width: 992px) {
   /* line 37, ../Portfolio/scss/sections/_contact.scss */
-  .contact-form {
+  .form {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1237,7 +1237,7 @@ a {
 
 @media (min-width: 992px) {
   /* line 37, ../Portfolio/scss/sections/_contact.scss */
-  .contact-form {
+  .form {
     height: 100%;
   }
 }
@@ -1279,26 +1279,35 @@ a {
   padding: 15px 30px;
   border-radius: 5px;
   border: none;
+  margin-top: 10px;
 }
 
-/* line 64, ../Portfolio/scss/sections/_contact.scss */
+/* line 65, ../Portfolio/scss/sections/_contact.scss */
 .submit-btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 992px) {
-  /* line 72, ../Portfolio/scss/sections/_contact.scss */
+  /* line 73, ../Portfolio/scss/sections/_contact.scss */
   .row {
     width: 49%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 78, ../Portfolio/scss/sections/_contact.scss */
+  /* line 79, ../Portfolio/scss/sections/_contact.scss */
   .row-full {
     width: 100%;
   }
+}
+
+/* line 87, ../Portfolio/scss/sections/_contact.scss */
+.error {
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: red;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
