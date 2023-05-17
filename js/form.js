@@ -1,7 +1,6 @@
 // character counter vars 
 let textArea = document.getElementById('message');
 let characterCounter = document.getElementById('char-count');
-const minNumOfChars = 140;
 
 
 const countCharacters = () => {
