@@ -905,37 +905,45 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #291e39;
   border: 1px solid #5b308b;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 992px) {
   /* line 3, ../Portfolio/scss/sections/_port.scss */
   .port-item {
-    width: 49%;
+    width: 48%;
+    transition: transform .2s;
   }
 }
 
-@media (min-width: 1200px) {
-  /* line 3, ../Portfolio/scss/sections/_port.scss */
-  .port-item {
-    width: 30%;
-  }
-}
-
-/* line 14, ../Portfolio/scss/sections/_port.scss */
+/* line 13, ../Portfolio/scss/sections/_port.scss */
 .port-item:hover {
   background-color: #f4ebff;
 }
 
-/* line 19, ../Portfolio/scss/sections/_port.scss */
+@media (min-width: 992px) {
+  /* line 13, ../Portfolio/scss/sections/_port.scss */
+  .port-item:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* line 20, ../Portfolio/scss/sections/_port.scss */
+.port-item:hover .info-text {
+  display: block;
+}
+
+/* line 25, ../Portfolio/scss/sections/_port.scss */
 .project-img {
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 260px;
   background-position: center;
   background-size: cover;
+  border-bottom: 1px solid #291e39;
 }
 
-/* line 23, ../Portfolio/scss/sections/_port.scss */
+/* line 30, ../Portfolio/scss/sections/_port.scss */
 .text-img {
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -948,20 +956,43 @@ a {
   color: #fff;
 }
 
-/* line 31, ../Portfolio/scss/sections/_port.scss */
-.port-text {
-  padding: 40px 20px;
+/* line 36, ../Portfolio/scss/sections/_port.scss */
+.project-info {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 34, ../Portfolio/scss/sections/_port.scss */
+/* line 40, ../Portfolio/scss/sections/_port.scss */
+.info-text {
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
+  width: 70%;
+}
+
+/* line 51, ../Portfolio/scss/sections/_port.scss */
+.port-text {
+  padding: 20px 20px;
+}
+
+/* line 54, ../Portfolio/scss/sections/_port.scss */
 .pro-heading {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 10px;
 }
 
-/* line 37, ../Portfolio/scss/sections/_port.scss */
+/* line 58, ../Portfolio/scss/sections/_port.scss */
 .view-heading {
   text-transform: uppercase;
   font-size: 1rem;
@@ -970,12 +1001,12 @@ a {
   margin: 0;
 }
 
-/* line 39, ../Portfolio/scss/sections/_port.scss */
+/* line 60, ../Portfolio/scss/sections/_port.scss */
 .view-heading:hover {
   text-decoration: underline;
 }
 
-/* line 46, ../Portfolio/scss/sections/_port.scss */
+/* line 67, ../Portfolio/scss/sections/_port.scss */
 .port-section {
   display: flex;
   flex-wrap: wrap;
@@ -983,7 +1014,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 46, ../Portfolio/scss/sections/_port.scss */
+  /* line 67, ../Portfolio/scss/sections/_port.scss */
   .port-section {
     flex-direction: row;
     justify-content: space-between;
