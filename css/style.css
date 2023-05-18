@@ -1274,32 +1274,6 @@ a {
   }
 }
 
-/* line 1, ../Portfolio/scss/sections/_coding.scss */
-.coding-section {
-  margin-right: auto;
-  margin-left: auto;
-  height: auto;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
-  border: 1px solid #291e39;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 80%;
-  background-color: #291e39;
-  color: #fff;
-}
-
-/* line 13, ../Portfolio/scss/sections/_coding.scss */
-.coding-section .container-heading {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 /* line 3, ../Portfolio/scss/sections/_scs.scss */
 .intro-item {
   height: auto;

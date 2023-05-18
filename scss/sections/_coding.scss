@@ -1,17 +1,1 @@
-.coding-section {
-    @include center;
-    @include box;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 80%;
-    background-color: $color-secondary;
-    color: $white;
-    & {
-        .container-heading {
-            @include center-box;
-        }
-    }
-}
+
