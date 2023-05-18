@@ -1,9 +1,8 @@
 //main
-
 .port-item {
     @include box;
     border: 1px solid $color-primary;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     @include mq(large) {
         width: 48%;
         transition: transform .2s;
@@ -24,8 +23,11 @@
 
 .project-img {
     @include flex-center;
-    @include bk-image(260px);
+    @include bk-image(220px);
     border-bottom: 1px solid $color-secondary;
+    @include mq(large){
+        @include bk-image(280px);
+    }
 }
 .text-img {
     @include heading(1.6rem);
@@ -66,4 +68,6 @@
 
 .port-section {
     @include flexbox;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed $color-secondary;
 }

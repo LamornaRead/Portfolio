@@ -25,7 +25,6 @@ a {
     @include heading-small(2rem);
     @include mq(large) {
         @include heading(2.4rem);
-        margin-bottom: 40px;
     }
 }
 

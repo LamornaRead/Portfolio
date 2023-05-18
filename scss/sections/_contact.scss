@@ -20,6 +20,8 @@
 
 .contact-section {
     @include flexbox;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed $color-secondary;
 }
 .contact-item-1 {
     @include mq(large) {
