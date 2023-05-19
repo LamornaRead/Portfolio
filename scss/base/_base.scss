@@ -21,11 +21,22 @@ a {
 }
 
 .page-heading {
-    @include heading-small(3rem, 4rem);
-    text-align: center;
+    @include heading-small(1rem, 3rem);
+    margin-left: 10px;
     color: $white;
     padding: 20px 0;
     text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
+    @include mq(medium) {
+        @include heading-small(1.5rem, 3rem);
+        margin-left: 0;
+        text-align: center;
+    }
+    @include mq(large) {
+        @include heading-small(2rem, 4rem);
+    }
+    @include mq(x-large) {
+        @include heading-small(3rem, 4rem);
+    }
 }
 //heading sizing and decoration
 

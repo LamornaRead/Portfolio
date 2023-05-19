@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamorna Read Coding Examples</title>
-    <link rel="stylesheet" href="js/slick/slick.css"/>
+    <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +59,7 @@
         </div>
     </header>
     <div class="container-main">
-        <div class="page-banner small-hidden medium-hidden" style="background-image: url('images/space-g2f7526c66_1280.jpg');">
+        <div class="page-banner" style="background-image: url('images/space-g2f7526c66_1280.jpg');">
             <h1 class="page-heading">Lamorna Read's Portfolio</h1>
         </div>
         <div id="coding" class="container">
@@ -68,12 +68,50 @@
                     <h2 class="heading">Coding examples</h2>
                 </div>
                 <div class="code-carousel">
-                    <div class="coding-item">
-                        <img src="images/coding examples/typewriter.png">
-                        <h2>Typewriter function</h2>
-                        <p>I created this function using JavaScript. It's used to create the typing animation for the homepage banner.</p>
-                        <p>It does this by adding the text content with JavaScript and adds one letter at a time until all the content is added</p>
-                        <p>Having two seperate functions for the header and footer help me to be able to put them both into one and create delay between them for a more pleasent visual effect.</p>
+                    <div class="code-item">
+                        <div>
+                            <pre class="code-snippet" tabindex="0">
+                                <code>
+ <span class="com">// animated text vars</span>
+
+<span class="key">const</span> <span class="var">headerText</span> <span class="op">=</span> <Span class="string">'My name is Lamorna Read'</Span>;
+<span class="key">const</span> <span class="var">paraText</span> <span class="op">=</span> <Span class="string">'I am an aspiring web developer with a great passion for being creative and using code to do it.'</Span>;
+<span class="key">let</span> <span class="var">headerSpeed</span> <span class="op">=</span> <span class="num">80</span>;
+<span class="key">let</span> <span class="var">paraSpeed</span> <span class="op">=</span> <span class="num">60</span>;
+<span class="key">let</span> <span class="var">headerLength</span> <span class="op">=</span> <span class="num">0</span>;
+<span class="key">let</span> <span class="var">paraLength</span> <span class="op">=</span> <span class="num">0</span>;
+
+<span class="com">// animated text function </span>
+
+<span class="key">function</span> <span class="func">typeWriterHeader</span>() {
+    <span class="key">if</span> (<span class="var">headerLength</span> <span class="op">&#60;</span> <span class="var">headerLength</span>.<span class="method">length</span>) {
+        <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-header'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">headerText</span>.<span class="func">charAt</span>(<span class="var">headerLength</span>);
+        <span class="var">headerLength</span><span class="op">++</span>;
+        <span class="func">setTimeout</span>(<span class="func-call">typeWriterHeader</span>, <span class="var">headerSpeed</span>);
+    }
+}
+<span class="key">function</span> <span class="func">typeWriterPara</span>() {
+    <span class="key">if</span> (<span class="var">paraLength</span> <span class="op">&#60;</span> <span class="var">paraText</span>.<span class="method">length</span>) {
+        <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-para'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">paraText</span>.<span class="func">charAt</span>(<span class="var">paraLength</span>);
+        <span class="var">paraLength</span><span class="op">++</span>;
+        <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="var">paraSpeed</span>);
+    }
+}
+
+<span class="key">function</span> <span class="func">typeWriter</span>() {
+    <span class="func">typeWriterHeader</span>();
+    <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="num">3000</span>);
+}
+
+<span class="func">typeWriter</span>();
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 class="code-item-header">Typewriter function</h2>
+                        <p class="code-item-text">I created this function using JavaScript. It's used to create the typing animation for the homepage banner.</p>
+                        <p class="code-item-text">It does this by adding the text content with JavaScript and adds one letter at a time until all the content is added</p>
+                        <p class="code-item-text">Having two seperate functions for the header and footer help me to be able to put them both into one and create delay between them for a more pleasent visual effect.</p>
+                        <p class="code-item-text">It also needs to be on its own file and only applied to page that needs it so it doesnt stop the rest of your code running.</p>
                     </div>
                     <div></div>
                     <div></div>
@@ -84,5 +122,6 @@
     <script src="js/jquery3.6.4.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

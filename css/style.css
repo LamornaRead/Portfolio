@@ -447,17 +447,52 @@ a {
 /* line 23, ../Portfolio/scss/base/_base.scss */
 .page-heading {
   text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 1rem;
+  line-height: 3rem;
   font-weight: 300;
   margin: 0;
-  text-align: center;
+  margin-left: 10px;
   color: #fff;
   padding: 20px 0;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
 }
 
-/* line 32, ../Portfolio/scss/base/_base.scss */
+@media (min-width: 768px) {
+  /* line 23, ../Portfolio/scss/base/_base.scss */
+  .page-heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 23, ../Portfolio/scss/base/_base.scss */
+  .page-heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 23, ../Portfolio/scss/base/_base.scss */
+  .page-heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+/* line 43, ../Portfolio/scss/base/_base.scss */
 .heading {
   text-transform: uppercase;
   font-size: 2rem;
@@ -466,7 +501,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 32, ../Portfolio/scss/base/_base.scss */
+  /* line 43, ../Portfolio/scss/base/_base.scss */
   .heading {
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -475,7 +510,7 @@ a {
   }
 }
 
-/* line 39, ../Portfolio/scss/base/_base.scss */
+/* line 50, ../Portfolio/scss/base/_base.scss */
 .small-heading {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -484,7 +519,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 39, ../Portfolio/scss/base/_base.scss */
+  /* line 50, ../Portfolio/scss/base/_base.scss */
   .small-heading {
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -493,7 +528,7 @@ a {
   }
 }
 
-/* line 49, ../Portfolio/scss/base/_base.scss */
+/* line 60, ../Portfolio/scss/base/_base.scss */
 .section-heading {
   text-transform: uppercase;
   font-size: 1rem;
@@ -504,7 +539,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 49, ../Portfolio/scss/base/_base.scss */
+  /* line 60, ../Portfolio/scss/base/_base.scss */
   .section-heading {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -514,7 +549,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 49, ../Portfolio/scss/base/_base.scss */
+  /* line 60, ../Portfolio/scss/base/_base.scss */
   .section-heading {
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -523,7 +558,7 @@ a {
   }
 }
 
-/* line 60, ../Portfolio/scss/base/_base.scss */
+/* line 71, ../Portfolio/scss/base/_base.scss */
 .section-heading-small {
   text-transform: uppercase;
   font-size: 1rem;
@@ -534,7 +569,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 60, ../Portfolio/scss/base/_base.scss */
+  /* line 71, ../Portfolio/scss/base/_base.scss */
   .section-heading-small {
     text-transform: uppercase;
     font-size: 1rem;
@@ -544,7 +579,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 60, ../Portfolio/scss/base/_base.scss */
+  /* line 71, ../Portfolio/scss/base/_base.scss */
   .section-heading-small {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -553,7 +588,7 @@ a {
   }
 }
 
-/* line 72, ../Portfolio/scss/base/_base.scss */
+/* line 83, ../Portfolio/scss/base/_base.scss */
 .section-content {
   font-size: 0.8rem;
   line-height: 1.4rem;
@@ -561,7 +596,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 72, ../Portfolio/scss/base/_base.scss */
+  /* line 83, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -569,7 +604,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 72, ../Portfolio/scss/base/_base.scss */
+  /* line 83, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -578,7 +613,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 72, ../Portfolio/scss/base/_base.scss */
+  /* line 83, ../Portfolio/scss/base/_base.scss */
   .section-content {
     font-size: 1rem;
     line-height: 1.6rem;
@@ -586,7 +621,7 @@ a {
   }
 }
 
-/* line 88, ../Portfolio/scss/base/_base.scss */
+/* line 99, ../Portfolio/scss/base/_base.scss */
 .section-link {
   margin-top: 5%;
 }
@@ -1272,6 +1307,108 @@ a {
   .about-heading {
     text-align: center;
   }
+}
+
+/* line 1, ../Portfolio/scss/sections/_coding.scss */
+.code-item {
+  background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+  color: #fff;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #291e39;
+  max-width: 800px;
+}
+
+/* line 7, ../Portfolio/scss/sections/_coding.scss */
+.code-item-header {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 10, ../Portfolio/scss/sections/_coding.scss */
+.code-item-text {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+/* line 14, ../Portfolio/scss/sections/_coding.scss */
+.code-snippet {
+  background-color: #2d2d2d;
+  color: #ccc;
+  padding: 10px;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  overflow: scroll;
+  height: 250px;
+}
+
+@media (min-width: 992px) {
+  /* line 14, ../Portfolio/scss/sections/_coding.scss */
+  .code-snippet {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    height: 300px;
+  }
+}
+
+/* line 29, ../Portfolio/scss/sections/_coding.scss */
+.key {
+  color: #188df4;
+}
+
+/* line 32, ../Portfolio/scss/sections/_coding.scss */
+.var {
+  color: #4cc4db;
+}
+
+/* line 36, ../Portfolio/scss/sections/_coding.scss */
+.com {
+  color: #1ad921;
+}
+
+/* line 39, ../Portfolio/scss/sections/_coding.scss */
+.string {
+  color: #17bc1d;
+}
+
+/* line 42, ../Portfolio/scss/sections/_coding.scss */
+.num {
+  color: #aefeb1;
+}
+
+/* line 45, ../Portfolio/scss/sections/_coding.scss */
+.op {
+  color: #ca3f3f;
+}
+
+/* line 48, ../Portfolio/scss/sections/_coding.scss */
+.func {
+  color: #db8a4c;
+}
+
+/* line 51, ../Portfolio/scss/sections/_coding.scss */
+.func-call {
+  color: #ffe4a6;
+}
+
+/* line 54, ../Portfolio/scss/sections/_coding.scss */
+.method {
+  color: #ad84fa;
+}
+
+/* line 57, ../Portfolio/scss/sections/_coding.scss */
+.doc {
+  color: #fde703;
 }
 
 /* line 3, ../Portfolio/scss/sections/_scs.scss */

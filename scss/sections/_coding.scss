@@ -1,1 +1,59 @@
+.code-item{
+    @include box-purple;
+    @include box;
+    max-width: 800px;
+}
 
+.code-item-header {
+    @include heading-small(1.2rem, 1.4rem);
+}
+.code-item-text {
+    @include p(0.8rem, 1.1rem, 2px);
+    font-weight: $font-weight--light;
+}
+.code-snippet {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    overflow: scroll;
+    height: 250px;
+    @include mq(large){
+        font-size: .8rem;
+        line-height: 1.2rem;
+        height: 300px;
+    }
+}
+
+.key {
+    color: #188df4;
+}
+.var {
+    color: #4cc4db;
+}
+
+.com {
+    color: #1ad921;
+}
+.string {
+    color: #17bc1d;
+}
+.num {
+    color: #aefeb1;
+}
+.op {
+    color: #ca3f3f;
+}
+.func {
+    color: #db8a4c;
+}
+.func-call {
+    color: #ffe4a6;
+}
+.method {
+    color: #ad84fa;
+}
+.doc {
+    color: #fde703;
+}
