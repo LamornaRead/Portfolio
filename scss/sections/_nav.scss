@@ -36,11 +36,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-// Temporary small nav bar
+//small screen nav bar
 
-// .ham-nav:hover .small-nav {
-//     display: block;
-// }
 
 .ham-logo {
     background-color: $color-secondary;
@@ -64,7 +61,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
     padding: 20px;
     margin: 0;
     & {

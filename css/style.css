@@ -720,13 +720,13 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 45, ../Portfolio/scss/sections/_nav.scss */
+/* line 42, ../Portfolio/scss/sections/_nav.scss */
 .ham-logo {
   background-color: #291e39;
   border-bottom: 1px solid #000;
 }
 
-/* line 49, ../Portfolio/scss/sections/_nav.scss */
+/* line 46, ../Portfolio/scss/sections/_nav.scss */
 .small-nav {
   position: fixed;
   top: -100%;
@@ -737,12 +737,12 @@ a {
   transition: .6s;
 }
 
-/* line 58, ../Portfolio/scss/sections/_nav.scss */
+/* line 55, ../Portfolio/scss/sections/_nav.scss */
 .small-nav.active {
   top: 0;
 }
 
-/* line 62, ../Portfolio/scss/sections/_nav.scss */
+/* line 59, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small {
   display: flex;
   flex-direction: row;
@@ -752,13 +752,13 @@ a {
   margin: 0;
 }
 
-/* line 71, ../Portfolio/scss/sections/_nav.scss */
+/* line 67, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small li {
   width: 40%;
   padding: 15px 0;
 }
 
-/* line 80, ../Portfolio/scss/sections/_nav.scss */
+/* line 76, ../Portfolio/scss/sections/_nav.scss */
 .nav-bar {
   background-color: #5b308b;
   color: #fff;
@@ -766,7 +766,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 80, ../Portfolio/scss/sections/_nav.scss */
+  /* line 76, ../Portfolio/scss/sections/_nav.scss */
   .nav-bar {
     float: left;
     position: -webkit-sticky;
@@ -784,7 +784,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 102, ../Portfolio/scss/sections/_nav.scss */
+  /* line 98, ../Portfolio/scss/sections/_nav.scss */
   .nav-logo {
     height: auto;
     width: 100%;
@@ -798,7 +798,7 @@ a {
   }
 }
 
-/* line 112, ../Portfolio/scss/sections/_nav.scss */
+/* line 108, ../Portfolio/scss/sections/_nav.scss */
 .logo-text {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -812,7 +812,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 112, ../Portfolio/scss/sections/_nav.scss */
+  /* line 108, ../Portfolio/scss/sections/_nav.scss */
   .logo-text {
     text-transform: uppercase;
     font-size: 3rem;
@@ -823,7 +823,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 112, ../Portfolio/scss/sections/_nav.scss */
+  /* line 108, ../Portfolio/scss/sections/_nav.scss */
   .logo-text {
     text-transform: uppercase;
     font-size: 4rem;
@@ -835,12 +835,12 @@ a {
   }
 }
 
-/* line 132, ../Portfolio/scss/sections/_nav.scss */
+/* line 128, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul {
   margin-top: 80px;
 }
 
-/* line 135, ../Portfolio/scss/sections/_nav.scss */
+/* line 131, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul li {
   line-height: 1.2rem;
   margin-top: 40px;
@@ -1333,7 +1333,18 @@ a {
   margin: 0;
 }
 
-/* line 10, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 992px) {
+  /* line 7, ../Portfolio/scss/sections/_coding.scss */
+  .code-item-header {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+/* line 13, ../Portfolio/scss/sections/_coding.scss */
 .code-item-text {
   font-size: 0.8rem;
   line-height: 1.1rem;
@@ -1341,7 +1352,17 @@ a {
   font-weight: 300;
 }
 
-/* line 14, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 992px) {
+  /* line 13, ../Portfolio/scss/sections/_coding.scss */
+  .code-item-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+}
+
+/* line 21, ../Portfolio/scss/sections/_coding.scss */
 .code-snippet {
   background-color: #2d2d2d;
   color: #ccc;
@@ -1353,7 +1374,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 14, ../Portfolio/scss/sections/_coding.scss */
+  /* line 21, ../Portfolio/scss/sections/_coding.scss */
   .code-snippet {
     font-size: .8rem;
     line-height: 1.2rem;
@@ -1361,52 +1382,57 @@ a {
   }
 }
 
-/* line 29, ../Portfolio/scss/sections/_coding.scss */
+/* line 36, ../Portfolio/scss/sections/_coding.scss */
+.snip-header {
+  margin: 0;
+}
+
+/* line 42, ../Portfolio/scss/sections/_coding.scss */
 .key {
   color: #188df4;
 }
 
-/* line 32, ../Portfolio/scss/sections/_coding.scss */
+/* line 45, ../Portfolio/scss/sections/_coding.scss */
 .var {
   color: #4cc4db;
 }
 
-/* line 36, ../Portfolio/scss/sections/_coding.scss */
+/* line 49, ../Portfolio/scss/sections/_coding.scss */
 .com {
   color: #1ad921;
 }
 
-/* line 39, ../Portfolio/scss/sections/_coding.scss */
+/* line 52, ../Portfolio/scss/sections/_coding.scss */
 .string {
   color: #17bc1d;
 }
 
-/* line 42, ../Portfolio/scss/sections/_coding.scss */
+/* line 55, ../Portfolio/scss/sections/_coding.scss */
 .num {
   color: #aefeb1;
 }
 
-/* line 45, ../Portfolio/scss/sections/_coding.scss */
+/* line 58, ../Portfolio/scss/sections/_coding.scss */
 .op {
   color: #ca3f3f;
 }
 
-/* line 48, ../Portfolio/scss/sections/_coding.scss */
+/* line 61, ../Portfolio/scss/sections/_coding.scss */
 .func {
   color: #db8a4c;
 }
 
-/* line 51, ../Portfolio/scss/sections/_coding.scss */
+/* line 64, ../Portfolio/scss/sections/_coding.scss */
 .func-call {
   color: #ffe4a6;
 }
 
-/* line 54, ../Portfolio/scss/sections/_coding.scss */
+/* line 67, ../Portfolio/scss/sections/_coding.scss */
 .method {
   color: #ad84fa;
 }
 
-/* line 57, ../Portfolio/scss/sections/_coding.scss */
+/* line 70, ../Portfolio/scss/sections/_coding.scss */
 .doc {
   color: #fde703;
 }

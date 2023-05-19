@@ -70,9 +70,9 @@
                 <div class="code-carousel">
                     <div class="code-item">
                         <div>
-                            <pre class="code-snippet" tabindex="0">
+                            <pre class="code-snippet">
                                 <code>
- <span class="com">// animated text vars</span>
+<span class="com">// animated text vars</span>
 
 <span class="key">const</span> <span class="var">headerText</span> <span class="op">=</span> <Span class="string">'My name is Lamorna Read'</Span>;
 <span class="key">const</span> <span class="var">paraText</span> <span class="op">=</span> <Span class="string">'I am an aspiring web developer with a great passion for being creative and using code to do it.'</Span>;
@@ -113,7 +113,81 @@
                         <p class="code-item-text">Having two seperate functions for the header and footer help me to be able to put them both into one and create delay between them for a more pleasent visual effect.</p>
                         <p class="code-item-text">It also needs to be on its own file and only applied to page that needs it so it doesnt stop the rest of your code running.</p>
                     </div>
-                    <div></div>
+                    <div class="code-item">
+                        <div>
+                            <pre class="code-snippet">
+                                <code>
+                                    <h3 class="snip-header">JavaScript</h3>
+<span class="com">//hamburger vars</span>
+
+<span class="key">const</span> <span class="var">hamburger</span> = <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.hamburger'</span>);
+<span class="key">const</span> <span class="var">navSmall</span> = <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.small-nav'</span>);
+<span class="key">const</span> <span class="var">navLink</span> = <span class="doc">document</span>.<span class="func">querySelectorAll</span>(<span class="string">'.nav-li'</span>);
+
+<span class="com">//hamburger event and function</span>
+
+<span class="var">hamburger</span>.<span class="func">addEventListener</span>(<span class="string">"click"</span>, <span class="func-call">mobileMenu</span>);
+
+<span class="key">function</span> <span class="func">mobileMenu</span>() {
+    <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
+    <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
+};
+
+<span class="var">navLink</span>.<span class="func">forEach</span>(<span class="var">n</span> <span class="op">=></span> <span class="var">n</span>.<span class="func">addEventListener</span>(<span class="string">'click'</span>, <span class="func-call">closeMenu</span>));
+
+<span class="key">function</span> <span class="func">closeMenu</span>() {
+    <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
+    <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
+}
+                                </code>
+                                <h3 class="snip-header">CSS</h3>
+                                <code>
+<span class="com">//hamburger</span>
+
+<span class="func-call">.hamburger</span> {
+    <span class="var">position</span>: <span class="key">absolute</span>;
+    <span class="var">display</span>: <span class="key">block</span>;
+    <span class="var">cursor</span>: <span class="key">pointer</span>;
+    <span class="var">height</span>: <span class="num">50px</span>;
+    <span class="var">width</span>: <span class="num">50px</span>;    
+    <span class="var">padding</span>: <span class="num">10px</span>;
+    <span class="var">top</span>: <span class="num">20px</span>;
+    <span class="var">right</span>: <span class="num">20px</span>;
+    <span class="var">background-color</span>: <span class="key">$color-primary</span>;
+    <span class="var">border-radius</span>: <span class="num">5px</span>;
+    <span class="var">z-index</span>: <span class="num">1</span>;
+    <span class="method">@media</span> (<span class="var">min-width: $break-lrg</span>) {
+        <span class="var">display</span>: <span class="key">none</span>;
+    }
+}
+
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">2</span>) {
+    <span class="var">opacity</span>: <span class="num">0</span>;
+}
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">1</span>) {
+    <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">8px</span>) <span class="func">rotate</span>(<span class="num">45deg</span>);
+}
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num"></span>3) {
+    <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">-8px</span>) <span class="func">rotate</span>(<span class="num">-45deg</span>);
+}
+
+<span class="func-call">.bar</span> {
+    <span class="var">display</span>: <span class="key">block</span>;
+    <span class="var">width</span>: <span class="num">25px</span>;
+    <span class="var">height</span>: <span class="num">2px</span>;
+    <span class="var">margin</span>: <span class="num">6px</span> <span class="key">auto</span>;
+    <span class="var">background-color</span>: <span class="key">$white</span>;
+    <span class="var">transition</span>: <span class="key">all</span> <span class="num">0.3s</span> <span class="key">ease-in-out</span>;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 class="code-item-header">Hamburger Button</h2>
+                        <p class="code-item-text">The hamburger button is a well known design used by the web developer community. It is commonly used for smaller screen design to hide our navigation bars, for improved flow and functionality.</p>
+                        <p class="code-item-text">I used JavaScript to create and tell the page how it works. I gave it the instructions that it needed to open and close the navigation menu on click.</p>
+                        <p class="code-item-text">Once I had done this I added the CSS to design how it looked and sat on the page. Each line of CSS used targets what I want to design and makes it look the way I want it too.</p>
+                        <p class="code-item-text">Next I added animation with CSS, so that the bars move and evolve into a cross symbol. Scroll through the above snippet to see the code I created for both of these languages.</p>
+                    </div>
                     <div></div>
                 </div>
             </div>

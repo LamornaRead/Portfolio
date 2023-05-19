@@ -6,10 +6,17 @@
 
 .code-item-header {
     @include heading-small(1.2rem, 1.4rem);
+    @include mq(large) {
+        @include heading-small(1.4rem, 1.6rem);
+    }
 }
 .code-item-text {
     @include p(0.8rem, 1.1rem, 2px);
     font-weight: $font-weight--light;
+    @include mq(large) {
+        @include p(1rem, 1.4rem, 1px);
+        margin: 20px 0;
+    }
 }
 .code-snippet {
     background-color: #2d2d2d;
@@ -25,6 +32,12 @@
         height: 300px;
     }
 }
+
+.snip-header {
+    margin: 0;
+}
+
+// span code colors 
 
 .key {
     color: #188df4;
