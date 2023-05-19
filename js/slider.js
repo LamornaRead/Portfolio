@@ -4,12 +4,12 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav',
+    asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: true,
-    focusOnSelect: true,
+    focusOnSelect: true
   });
