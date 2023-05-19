@@ -1,6 +1,7 @@
 .code-item{
     @include box-purple;
     @include box;
+    @include center;
     max-width: 800px;
 }
 
