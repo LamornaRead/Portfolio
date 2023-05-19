@@ -2,6 +2,7 @@
 let textArea = document.getElementById('message');
 let characterCounter = document.getElementById('char-count');
 
+//counter function 
 
 const countCharacters = () => {
     let numberOfEnteredChars = textArea.value.length;
@@ -20,6 +21,7 @@ const countCharacters = () => {
 
 textArea.addEventListener("input", countCharacters);
 
+//form function
 
 function validateForm() {
     const firstName = document.getElementById('fname').value;
