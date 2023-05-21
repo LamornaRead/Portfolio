@@ -2,7 +2,7 @@
 
 .intro-item {
     @include box;
-    @include box-purple(250px, 400px);
+    @include box-purple(250px, 600px);
     width: 100%;
     @include mq(large) {
         margin-bottom: 30px;
@@ -17,7 +17,7 @@
 
 .scs-item {
     @include box;
-    @include box-purple(340px, 400px);
+    @include box-purple(340px, 600px);
     @include mq(large) {
         width: 49%
     }
