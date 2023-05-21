@@ -59,187 +59,207 @@
         </div>
     </header>
     <div class="container-main">
+        <!--HEADING-->
         <div class="page-banner" style="background-image: url('images/space-g2f7526c66_1280.jpg');">
             <h1 class="page-heading">Lamorna Read's Portfolio</h1>
         </div>
-
+        <!--CONTENT-->
         <div id="coding" class="container">
             <div class="coding-section">
                 <div class="container-heading">
                     <h2 class="heading">Coding examples</h2>
                 </div>
                 <div class="code-carousel">
-
                     <div>
                         <div class="slider slider-for">
-                          <div>
-                            <div class="code-item">
-                                <div>
-                                    <pre class="code-snippet">
-                                        <code>
-            <span class="com">// animated text vars</span>
-            
-            <span class="key">const</span> <span class="var">headerText</span> <span class="op">=</span> <Span class="string">'My name is Lamorna Read'</Span>;
-            <span class="key">const</span> <span class="var">paraText</span> <span class="op">=</span> <Span class="string">'I am an aspiring web developer with a great passion for being creative and using code to do it.'</Span>;
-            <span class="key">let</span> <span class="var">headerSpeed</span> <span class="op">=</span> <span class="num">80</span>;
-            <span class="key">let</span> <span class="var">paraSpeed</span> <span class="op">=</span> <span class="num">60</span>;
-            <span class="key">let</span> <span class="var">headerLength</span> <span class="op">=</span> <span class="num">0</span>;
-            <span class="key">let</span> <span class="var">paraLength</span> <span class="op">=</span> <span class="num">0</span>;
-            
-            <span class="com">// animated text function </span>
-            
-            <span class="key">function</span> <span class="func">typeWriterHeader</span>() {
-            <span class="key">if</span> (<span class="var">headerLength</span> <span class="op">&#60;</span> <span class="var">headerLength</span>.<span class="method">length</span>) {
-                <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-header'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">headerText</span>.<span class="func">charAt</span>(<span class="var">headerLength</span>);
-                <span class="var">headerLength</span><span class="op">++</span>;
-                <span class="func">setTimeout</span>(<span class="func-call">typeWriterHeader</span>, <span class="var">headerSpeed</span>);
-            }
-            }
-            <span class="key">function</span> <span class="func">typeWriterPara</span>() {
-            <span class="key">if</span> (<span class="var">paraLength</span> <span class="op">&#60;</span> <span class="var">paraText</span>.<span class="method">length</span>) {
-                <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-para'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">paraText</span>.<span class="func">charAt</span>(<span class="var">paraLength</span>);
-                <span class="var">paraLength</span><span class="op">++</span>;
-                <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="var">paraSpeed</span>);
-            }
-            }
-            
-            <span class="key">function</span> <span class="func">typeWriter</span>() {
-            <span class="func">typeWriterHeader</span>();
-            <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="num">3000</span>);
-            }
-            
-            <span class="func">typeWriter</span>();
-                                        </code>
-                                    </pre>
+                        <!--FIRST CODE ITEM-->
+                            <div>
+                                <div class="code-item">
+                                    <div>
+                                        <pre class="code-snippet">
+                                            <code>
+<span class="com">// animated text vars</span>
+
+<span class="key">const</span> <span class="var">headerText</span> <span class="op">=</span> <Span class="string">'My name is Lamorna Read'</Span>;
+<span class="key">const</span> <span class="var">paraText</span> <span class="op">=</span> <Span class="string">'I am an aspiring web developer with a great passion for being creative and using code to do it.'</Span>;
+<span class="key">let</span> <span class="var">headerSpeed</span> <span class="op">=</span> <span class="num">80</span>;
+<span class="key">let</span> <span class="var">paraSpeed</span> <span class="op">=</span> <span class="num">60</span>;
+<span class="key">let</span> <span class="var">headerLength</span> <span class="op">=</span> <span class="num">0</span>;
+<span class="key">let</span> <span class="var">paraLength</span> <span class="op">=</span> <span class="num">0</span>;
+
+<span class="com">// animated text function </span>
+
+<span class="key">function</span> <span class="func">typeWriterHeader</span>() {
+    <span class="key">if</span> (<span class="var">headerLength</span> <span class="op">&#60;</span> <span class="var">headerLength</span>.<span class="method">length</span>) {
+        <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-header'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">headerText</span>.<span class="func">charAt</span>(<span class="var">headerLength</span>);
+        <span class="var">headerLength</span><span class="op">++</span>;
+        <span class="func">setTimeout</span>(<span class="func-call">typeWriterHeader</span>, <span class="var">headerSpeed</span>);
+    }
+}
+
+<span class="key">function</span> <span class="func">typeWriterPara</span>() {
+    <span class="key">if</span> (<span class="var">paraLength</span> <span class="op">&#60;</span> <span class="var">paraText</span>.<span class="method">length</span>) {
+        <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-para'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">paraText</span>.<span class="func">charAt</span>(<span class="var">paraLength</span>);
+        <span class="var">paraLength</span><span class="op">++</span>;
+        <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="var">paraSpeed</span>);
+    }
+}
+
+<span class="key">function</span> <span class="func">typeWriter</span>() {
+    <span class="func">typeWriterHeader</span>();
+    <span class="func">setTimeout</span>(<span class="func-call">typeWriterPara</span>, <span class="num">3000</span>);
+}
+
+<span class="func">typeWriter</span>();
+                                            </code>
+                                        </pre>
+                                    </div>
                                 </div>
+                            </div>
+                            <!--SECOND CODE ITEM-->
+                            <div>
+                                <div class="code-item">
+                                    <div>
+                                        <pre class="code-snippet">
+                                            <code>
+<span class="com">//hamburger vars - JavaScript</span>
+
+<span class="key">const</span> <span class="var">hamburger</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.hamburger'</span>);
+<span class="key">const</span> <span class="var">navSmall</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.small-nav'</span>);
+<span class="key">const</span> <span class="var">navLink</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelectorAll</span>(<span class="string">'.nav-li'</span>);
+
+<span class="com">//hamburger event and function</span>
+
+<span class="var">hamburger</span>.<span class="func">addEventListener</span>(<span class="string">"click"</span>, <span class="func-call">mobileMenu</span>);
+
+<span class="key">function</span> <span class="func">mobileMenu</span>() {
+    <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
+    <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
+};
+
+<span class="var">navLink</span>.<span class="func">forEach</span>(<span class="var">n</span> <span class="op">=></span> <span class="var">n</span>.<span class="func">addEventListener</span>(<span class="string">'click'</span>, <span class="func-call">closeMenu</span>));
+
+<span class="key">function</span> <span class="func">closeMenu</span>() {
+    <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
+    <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
+};
+                                            </code>
+                                            <code>
+<span class="com">//hamburger - SCSS</span>
+
+<span class="func-call">.hamburger</span> {
+    <span class="var">position</span>: <span class="key">absolute</span>;
+    <span class="var">display</span>: <span class="key">block</span>;
+    <span class="var">cursor</span>: <span class="key">pointer</span>;
+    <span class="var">height</span>: <span class="num">50px</span>;
+    <span class="var">width</span>: <span class="num">50px</span>;    
+    <span class="var">padding</span>: <span class="num">10px</span>;
+    <span class="var">top</span>: <span class="num">20px</span>;
+    <span class="var">right</span>: <span class="num">20px</span>;
+    <span class="var">background-color</span>: <span class="key">$color-primary</span>;
+    <span class="var">border-radius</span>: <span class="num">5px</span>;
+    <span class="var">z-index</span>: <span class="num">1</span>;
+    <span class="method">@media</span> (<span class="var">min-width: $break-lrg</span>) {
+        <span class="var">display</span>: <span class="key">none</span>;
+    }
+}
+
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">2</span>) {
+    <span class="var">opacity</span>: <span class="num">0</span>;
+}
+
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">1</span>) {
+    <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">8px</span>) <span class="func">rotate</span>(<span class="num">45deg</span>);
+}
+
+<span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num"></span>3) {
+    <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">-8px</span>) <span class="func">rotate</span>(<span class="num">-45deg</span>);
+}
+
+<span class="func-call">.bar</span> {
+    <span class="var">display</span>: <span class="key">block</span>;
+    <span class="var">width</span>: <span class="num">25px</span>;
+    <span class="var">height</span>: <span class="num">2px</span>;
+    <span class="var">margin</span>: <span class="num">6px</span> <span class="key">auto</span>;
+    <span class="var">background-color</span>: <span class="key">$white</span>;
+    <span class="var">transition</span>: <span class="key">all</span> <span class="num">0.3s</span> <span class="key">ease-in-out</span>;
+}
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--SECOND CODE ITEM END-->
+                            <!--THIRD CODE ITEM-->
+                            <div>
+                                <div class="code-item">
+                                    <div>
+                                        <pre class="code-snippet">
+                                            <code>
+<span class="com">// character counter vars </span>
+
+<span class="key">let</span> <span class="var">textArea</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'message'</span>);
+<span class="key">let</span> <span class="var">characterCounter</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'char-count'</span>);
+
+<span class="com">//counter function </span>
+
+<span class="key">const</span> <span class="var">countCharacters</span> <span class="op">=</span> () <span class="op">=></span> {
+    <span class="key">let</span> <span class="var">numberOfEnteredChars</span> <span class="op">=</span> <span class="var">textArea</span>.<span class="method">value</span>.<span class="method">length</span>;
+    <span class="key">let</span> <span class="var">counter</span> <span class="op">=</span> <span class="var">numberOfEnteredChars</span>;
+
+    <span class="key">if</span>(<span class="var">numberOfEnteredChars</span> <span class="op">&#60;=</span> <span class="num">140</span>) {
+        <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="var">counter</span> <span class="op">+</span> <span class="string">'/140'</span>;
+        <span class="var">characterCounter</span>.<span class="method">style</span>.<span class="method">color</span> <span class="op">=</span> <span class="string">'red'</span>;
+    } <span class="key">else</span> {
+        <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="var">counter</span> <span class="op">+</span> <span class="string">'/140'</span>;
+        <span class="var">characterCounter</span>.<span class="method">style</span>.<span class="method">color</span> <span class="op">=</span> <span class="string">'#24d36e'</span>;
+    }
+    (<span class="key">this</span>).<span class="func">addEventListener</span>(<span class="string">"submit"</span>, <span class="key">function</span>(){
+        <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="string">''</span>;
+    });
+};
+
+<span class="var">textArea</span>.<span class="func">addEventListener</span>(<span class="string">"input"</span>, <span class="func-call">countCharacters</span>);
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--THIRD CODE ITEM END-->
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <!--FIRST NAV TEXT ITEM-->
+                        <div class="slide-content">
+                            <div class="slide-text">
                                 <h2 class="code-item-header">Typewriter function</h2>
                                 <p class="code-item-text">I created this function using <strong style="text-transform: uppercase;">JavaScript</strong>. It's used to create the typing animation for the homepage banner.</p>
                                 <p class="code-item-text">It does this by adding the text content with <strong style="text-transform: uppercase;">JavaScript</strong> and adds one letter at a time until all the content is added</p>
                                 <p class="code-item-text">Having two seperate functions for the header and footer help me to be able to put them both into one and create delay between them for a more pleasent visual effect.</p>
                                 <p class="code-item-text">It also needs to be on its own file and only applied to page that needs it so it doesnt stop the rest of your code running.</p>
                             </div>
-                          </div>
-                          <div>
-                            <div class="code-item">
-                                <div>
-                                    <pre class="code-snippet">
-                                        <code>
-            <span class="com">//hamburger vars - JavaScript</span>
-            
-            <span class="key">const</span> <span class="var">hamburger</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.hamburger'</span>);
-            <span class="key">const</span> <span class="var">navSmall</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelector</span>(<span class="string">'.small-nav'</span>);
-            <span class="key">const</span> <span class="var">navLink</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">querySelectorAll</span>(<span class="string">'.nav-li'</span>);
-            
-            <span class="com">//hamburger event and function</span>
-            
-            <span class="var">hamburger</span>.<span class="func">addEventListener</span>(<span class="string">"click"</span>, <span class="func-call">mobileMenu</span>);
-            
-            <span class="key">function</span> <span class="func">mobileMenu</span>() {
-            <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
-            <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">toggle</span>(<span class="string">'active'</span>);
-            };
-            
-            <span class="var">navLink</span>.<span class="func">forEach</span>(<span class="var">n</span> <span class="op">=></span> <span class="var">n</span>.<span class="func">addEventListener</span>(<span class="string">'click'</span>, <span class="func-call">closeMenu</span>));
-            
-            <span class="key">function</span> <span class="func">closeMenu</span>() {
-            <span class="var">hamburger</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
-            <span class="var">navSmall</span>.<span class="method">classList</span>.<span class="func">remove</span>(<span class="string">'active'</span>);
-            }
-                                        </code>
-                                        <code>
-            <span class="com">//hamburger - SCSS</span>
-            
-            <span class="func-call">.hamburger</span> {
-            <span class="var">position</span>: <span class="key">absolute</span>;
-            <span class="var">display</span>: <span class="key">block</span>;
-            <span class="var">cursor</span>: <span class="key">pointer</span>;
-            <span class="var">height</span>: <span class="num">50px</span>;
-            <span class="var">width</span>: <span class="num">50px</span>;    
-            <span class="var">padding</span>: <span class="num">10px</span>;
-            <span class="var">top</span>: <span class="num">20px</span>;
-            <span class="var">right</span>: <span class="num">20px</span>;
-            <span class="var">background-color</span>: <span class="key">$color-primary</span>;
-            <span class="var">border-radius</span>: <span class="num">5px</span>;
-            <span class="var">z-index</span>: <span class="num">1</span>;
-            <span class="method">@media</span> (<span class="var">min-width: $break-lrg</span>) {
-                <span class="var">display</span>: <span class="key">none</span>;
-            }
-            }
-            
-            <span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">2</span>) {
-            <span class="var">opacity</span>: <span class="num">0</span>;
-            }
-            <span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num">1</span>) {
-            <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">8px</span>) <span class="func">rotate</span>(<span class="num">45deg</span>);
-            }
-            <span class="func-call">.hamburger.active .bar:nth-child</span>(<span class="num"></span>3) {
-            <span class="var">transform</span>: <span class="func">translateY</span>(<span class="num">-8px</span>) <span class="func">rotate</span>(<span class="num">-45deg</span>);
-            }
-            
-            <span class="func-call">.bar</span> {
-            <span class="var">display</span>: <span class="key">block</span>;
-            <span class="var">width</span>: <span class="num">25px</span>;
-            <span class="var">height</span>: <span class="num">2px</span>;
-            <span class="var">margin</span>: <span class="num">6px</span> <span class="key">auto</span>;
-            <span class="var">background-color</span>: <span class="key">$white</span>;
-            <span class="var">transition</span>: <span class="key">all</span> <span class="num">0.3s</span> <span class="key">ease-in-out</span>;
-            }
-                                        </code>
-                                    </pre>
-                                </div>
-                                <h2 class="code-item-header">Hamburger Button</h2>
+                        </div>
+                        <!--SECOND NAV TEXT ITEM-->
+                        <div class="slide-content"> 
+                            <div class="slide-text">         
+                                <h2 class="code-item-header">Hamburger Button</h2>                       
                                 <p class="code-item-text">The <strong style="text-transform: uppercase;">hamburger button</strong> is a well known design used by the web developer community. It is commonly used for smaller screen design to hide our navigation bars, for improved flow and functionality.</p>
                                 <p class="code-item-text">I used <strong style="text-transform: uppercase;">JavaScript</strong> to create and tell the page how it works. I gave it the instructions that it needed to open and close the navigation menu on click.</p>
                                 <p class="code-item-text">Once I had done this I added the <strong>SCSS</strong> to design how it looked and sat on the page. Each line of <strong>SCSS</strong> used targets what I want to design and makes it look the way I want it too.</p>
                                 <p class="code-item-text">Next I added animation with <strong>SCSS</strong>, so that the bars move and evolve into a cross symbol. Scroll through the above snippet to see the code I created for both of these languages.</p>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="code-item">
-                                <div>
-                                    <pre class="code-snippet">
-                                        <code>
-            <span class="com">// character counter vars </span>
-            
-            <span class="key">let</span> <span class="var">textArea</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'message'</span>);
-            <span class="key">let</span> <span class="var">characterCounter</span> <span class="op">=</span> <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'char-count'</span>);
-            
-            <span class="com">//counter function </span>
-            
-            <span class="key">const</span> <span class="var">countCharacters</span> <span class="op">=</span> () <span class="op">=></span> {
-            <span class="key">let</span> <span class="var">numberOfEnteredChars</span> <span class="op">=</span> <span class="var">textArea</span>.<span class="method">value</span>.<span class="method">length</span>;
-            <span class="key">let</span> <span class="var">counter</span> <span class="op">=</span> <span class="var">numberOfEnteredChars</span>;
-            
-            <span class="key">if</span>(<span class="var">numberOfEnteredChars</span> <span class="op">&#60;=</span> <span class="num">140</span>) {
-                <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="var">counter</span> <span class="op">+</span> <span class="string">'/140'</span>;
-                <span class="var">characterCounter</span>.<span class="method">style</span>.<span class="method">color</span> <span class="op">=</span> <span class="string">'red'</span>;
-            } <span class="key">else</span> {
-                <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="var">counter</span> <span class="op">+</span> <span class="string">'/140'</span>;
-                <span class="var">characterCounter</span>.<span class="method">style</span>.<span class="method">color</span> <span class="op">=</span> <span class="string">'#24d36e'</span>;
-            }
-            (<span class="key">this</span>).<span class="func">addEventListener</span>(<span class="string">"submit"</span>, <span class="key">function</span>(){
-                <span class="var">characterCounter</span>.<span class="method">textContent</span> <span class="op">=</span> <span class="string">''</span>;
-            });
-            };
-            
-            <span class="var">textArea</span>.<span class="func">addEventListener</span>(<span class="string">"input"</span>, <span class="func-call">countCharacters</span>);
-                                        </code>
-                                    </pre>
-                                </div>
+                            </div> 
+                        </div>
+                        <!--SECOND NAV TEXT ITEM-->
+                        <div class="slide-content">  
+                            <div class="slide-text">                             
                                 <h2 class="code-item-header">Character Counter</h2>
                                 <p class="code-item-text">This is a character counter function I created using <strong style="text-transform: uppercase;">JavaScript</strong>. I developed this so that I could add it to my form to count the amount of characters you type.</p>
                                 <p class="code-item-text">It is extremely helpful for the web page user, so that they can see how many characters they need to type to be able to send me the message.</p>
                                 <p class="code-item-text">The first part of the function &#40; the if statement &#41;, counts the number of character entered. Then if it is below or equal to 140 it will display the number of charcters out of 140 in red.</p>
-                                <p class="code-item-text">The second part &#40; the else statement &#41;, does the same, but if the number of characters is over 140 it displays it in green. As soon as the user starts typing it inserts the counter content into the HTML so the user can see it.</p>    
-                            </div>
-                          </div>
+                                <p class="code-item-text">The second part &#40; the else statement &#41;, does the same, but if the number of characters is over 140 it displays it in green. As soon as the user starts typing it inserts the counter content into the HTML so the user can see it.</p>  
+                            </div> 
                         </div>
-                        <div class="slider slider-nav">
-                          <div><h3>1</h3></div>
-                          <div><h3>2</h3></div>
-                          <div><h3>3</h3></div>
-                        </div>
-
+                    </div>
                 </div>    
             </div>
         </div>

@@ -1,8 +1,8 @@
 .code-item{
     @include box-purple;
-    @include box;
     @include center;
-    max-width: 800px;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
 }
 
 .code-item-header {
@@ -34,8 +34,19 @@
     }
 }
 
-.snip-header {
-    margin: 0;
+// slider design 
+
+.slide-content {
+    width: 80%;
+}
+.slide-text {
+    @include box-purple(600px);
+    @include center;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
+    @include mq(small) {
+        @include box-purple(400px);
+    }
 }
 
 // span code colors 
@@ -72,13 +83,3 @@
     color: #fde703;
 }
 
-// h3 {
-//     background: #fff;
-//     color: #3498db;
-//     font-size: 36px;
-//     line-height: 100px;
-//     margin: 10px;
-//     padding: 2%;
-//     position: relative;
-//     text-align: center;
-// }

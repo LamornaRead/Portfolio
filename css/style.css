@@ -1315,15 +1315,10 @@ a {
   background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
-  height: auto;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
-  border: 1px solid #291e39;
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
+  border: 1px solid #291e39;
+  border-radius: 5px;
 }
 
 /* line 8, ../Portfolio/scss/sections/_coding.scss */
@@ -1384,57 +1379,81 @@ a {
   }
 }
 
-/* line 37, ../Portfolio/scss/sections/_coding.scss */
-.snip-header {
-  margin: 0;
+/* line 39, ../Portfolio/scss/sections/_coding.scss */
+.slide-content {
+  width: 80%;
 }
 
-/* line 43, ../Portfolio/scss/sections/_coding.scss */
+/* line 42, ../Portfolio/scss/sections/_coding.scss */
+.slide-text {
+  background-color: #5b308b;
+  background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+  color: #fff;
+  padding: 20px;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #291e39;
+  border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+  /* line 42, ../Portfolio/scss/sections/_coding.scss */
+  .slide-text {
+    background-color: #5b308b;
+    background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+    color: #fff;
+    padding: 20px;
+    min-height: 400px;
+  }
+}
+
+/* line 54, ../Portfolio/scss/sections/_coding.scss */
 .key {
   color: #188df4;
 }
 
-/* line 46, ../Portfolio/scss/sections/_coding.scss */
+/* line 57, ../Portfolio/scss/sections/_coding.scss */
 .var {
   color: #4cc4db;
 }
 
-/* line 50, ../Portfolio/scss/sections/_coding.scss */
+/* line 61, ../Portfolio/scss/sections/_coding.scss */
 .com {
   color: #1ad921;
 }
 
-/* line 53, ../Portfolio/scss/sections/_coding.scss */
+/* line 64, ../Portfolio/scss/sections/_coding.scss */
 .string {
   color: #17bc1d;
 }
 
-/* line 56, ../Portfolio/scss/sections/_coding.scss */
+/* line 67, ../Portfolio/scss/sections/_coding.scss */
 .num {
   color: #aefeb1;
 }
 
-/* line 59, ../Portfolio/scss/sections/_coding.scss */
+/* line 70, ../Portfolio/scss/sections/_coding.scss */
 .op {
   color: #ca3f3f;
 }
 
-/* line 62, ../Portfolio/scss/sections/_coding.scss */
+/* line 73, ../Portfolio/scss/sections/_coding.scss */
 .func {
   color: #db8a4c;
 }
 
-/* line 65, ../Portfolio/scss/sections/_coding.scss */
+/* line 76, ../Portfolio/scss/sections/_coding.scss */
 .func-call {
   color: #ffe4a6;
 }
 
-/* line 68, ../Portfolio/scss/sections/_coding.scss */
+/* line 79, ../Portfolio/scss/sections/_coding.scss */
 .method {
   color: #ad84fa;
 }
 
-/* line 71, ../Portfolio/scss/sections/_coding.scss */
+/* line 82, ../Portfolio/scss/sections/_coding.scss */
 .doc {
   color: #fde703;
 }
