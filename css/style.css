@@ -685,7 +685,7 @@ a {
   right: 20px;
   background-color: #5b308b;
   border-radius: 5px;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 992px) {
@@ -735,14 +735,15 @@ a {
   color: #fff;
   background-color: #422365;
   transition: .6s;
+  z-index: 1;
 }
 
-/* line 55, ../Portfolio/scss/sections/_nav.scss */
+/* line 56, ../Portfolio/scss/sections/_nav.scss */
 .small-nav.active {
   top: 0;
 }
 
-/* line 59, ../Portfolio/scss/sections/_nav.scss */
+/* line 60, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small {
   display: flex;
   flex-direction: row;
@@ -752,13 +753,13 @@ a {
   margin: 0;
 }
 
-/* line 67, ../Portfolio/scss/sections/_nav.scss */
+/* line 68, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small li {
   width: 40%;
   padding: 15px 0;
 }
 
-/* line 76, ../Portfolio/scss/sections/_nav.scss */
+/* line 77, ../Portfolio/scss/sections/_nav.scss */
 .nav-bar {
   background-color: #5b308b;
   color: #fff;
@@ -766,7 +767,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 76, ../Portfolio/scss/sections/_nav.scss */
+  /* line 77, ../Portfolio/scss/sections/_nav.scss */
   .nav-bar {
     float: left;
     position: -webkit-sticky;
@@ -784,7 +785,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 98, ../Portfolio/scss/sections/_nav.scss */
+  /* line 99, ../Portfolio/scss/sections/_nav.scss */
   .nav-logo {
     height: auto;
     width: 100%;
@@ -798,7 +799,7 @@ a {
   }
 }
 
-/* line 108, ../Portfolio/scss/sections/_nav.scss */
+/* line 109, ../Portfolio/scss/sections/_nav.scss */
 .logo-text {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -812,7 +813,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 108, ../Portfolio/scss/sections/_nav.scss */
+  /* line 109, ../Portfolio/scss/sections/_nav.scss */
   .logo-text {
     text-transform: uppercase;
     font-size: 3rem;
@@ -823,7 +824,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 108, ../Portfolio/scss/sections/_nav.scss */
+  /* line 109, ../Portfolio/scss/sections/_nav.scss */
   .logo-text {
     text-transform: uppercase;
     font-size: 4rem;
@@ -835,12 +836,12 @@ a {
   }
 }
 
-/* line 128, ../Portfolio/scss/sections/_nav.scss */
+/* line 129, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul {
   margin-top: 80px;
 }
 
-/* line 131, ../Portfolio/scss/sections/_nav.scss */
+/* line 132, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul li {
   line-height: 1.2rem;
   margin-top: 40px;
@@ -1319,9 +1320,24 @@ a {
   margin-left: auto;
   border: 1px solid #291e39;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
-/* line 8, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 768px) {
+  /* line 1, ../Portfolio/scss/sections/_coding.scss */
+  .code-item {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 1, ../Portfolio/scss/sections/_coding.scss */
+  .code-item {
+    width: 80%;
+  }
+}
+
+/* line 15, ../Portfolio/scss/sections/_coding.scss */
 .code-item-header {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -1331,7 +1347,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 8, ../Portfolio/scss/sections/_coding.scss */
+  /* line 15, ../Portfolio/scss/sections/_coding.scss */
   .code-item-header {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -1341,25 +1357,34 @@ a {
   }
 }
 
-/* line 14, ../Portfolio/scss/sections/_coding.scss */
+/* line 21, ../Portfolio/scss/sections/_coding.scss */
 .code-item-text {
-  font-size: 0.8rem;
-  line-height: 1.1rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
 
-@media (min-width: 992px) {
-  /* line 14, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 576px) {
+  /* line 21, ../Portfolio/scss/sections/_coding.scss */
   .code-item-text {
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 21, ../Portfolio/scss/sections/_coding.scss */
+  .code-item-text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
     letter-spacing: 1px;
     margin: 20px 0;
   }
 }
 
-/* line 22, ../Portfolio/scss/sections/_coding.scss */
+/* line 32, ../Portfolio/scss/sections/_coding.scss */
 .code-snippet {
   background-color: #2d2d2d;
   color: #ccc;
@@ -1367,38 +1392,59 @@ a {
   font-size: 0.7rem;
   line-height: 1rem;
   overflow: scroll;
-  height: 250px;
+  height: 300px;
 }
 
 @media (min-width: 992px) {
-  /* line 22, ../Portfolio/scss/sections/_coding.scss */
+  /* line 32, ../Portfolio/scss/sections/_coding.scss */
   .code-snippet {
     font-size: .8rem;
     line-height: 1.2rem;
-    height: 300px;
   }
 }
 
-/* line 39, ../Portfolio/scss/sections/_coding.scss */
-.slide-content {
-  width: 80%;
+/* line 47, ../Portfolio/scss/sections/_coding.scss */
+.slider-nav {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 42, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 992px) {
+  /* line 47, ../Portfolio/scss/sections/_coding.scss */
+  .slider-nav {
+    width: 80%;
+  }
+}
+
+/* line 53, ../Portfolio/scss/sections/_coding.scss */
+.slider-for {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  /* line 53, ../Portfolio/scss/sections/_coding.scss */
+  .slider-for {
+    width: 80%;
+  }
+}
+
+/* line 59, ../Portfolio/scss/sections/_coding.scss */
 .slide-text {
   background-color: #5b308b;
   background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
   color: #fff;
   padding: 20px;
-  min-height: 600px;
+  min-height: 520px;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid #291e39;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
-  /* line 42, ../Portfolio/scss/sections/_coding.scss */
+  /* line 59, ../Portfolio/scss/sections/_coding.scss */
   .slide-text {
     background-color: #5b308b;
     background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
@@ -1408,52 +1454,114 @@ a {
   }
 }
 
-/* line 54, ../Portfolio/scss/sections/_coding.scss */
+@media (min-width: 768px) {
+  /* line 59, ../Portfolio/scss/sections/_coding.scss */
+  .slide-text {
+    background-color: #5b308b;
+    background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+    color: #fff;
+    padding: 20px;
+    min-height: 420px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 59, ../Portfolio/scss/sections/_coding.scss */
+  .slide-text {
+    background-color: #5b308b;
+    background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+    color: #fff;
+    padding: 20px;
+    min-height: 450px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 59, ../Portfolio/scss/sections/_coding.scss */
+  .slide-text {
+    background-color: #5b308b;
+    background-image: linear-gradient(#5b308b 50%, rgba(0, 0, 0, 0.2));
+    color: #fff;
+    padding: 20px;
+    min-height: 350px;
+  }
+}
+
+/* line 81, ../Portfolio/scss/sections/_coding.scss */
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  /* line 81, ../Portfolio/scss/sections/_coding.scss */
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 81, ../Portfolio/scss/sections/_coding.scss */
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
+}
+
+/* line 92, ../Portfolio/scss/sections/_coding.scss */
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+/* line 98, ../Portfolio/scss/sections/_coding.scss */
 .key {
   color: #188df4;
 }
 
-/* line 57, ../Portfolio/scss/sections/_coding.scss */
+/* line 101, ../Portfolio/scss/sections/_coding.scss */
 .var {
   color: #4cc4db;
 }
 
-/* line 61, ../Portfolio/scss/sections/_coding.scss */
+/* line 105, ../Portfolio/scss/sections/_coding.scss */
 .com {
   color: #1ad921;
 }
 
-/* line 64, ../Portfolio/scss/sections/_coding.scss */
+/* line 108, ../Portfolio/scss/sections/_coding.scss */
 .string {
   color: #17bc1d;
 }
 
-/* line 67, ../Portfolio/scss/sections/_coding.scss */
+/* line 111, ../Portfolio/scss/sections/_coding.scss */
 .num {
   color: #aefeb1;
 }
 
-/* line 70, ../Portfolio/scss/sections/_coding.scss */
+/* line 114, ../Portfolio/scss/sections/_coding.scss */
 .op {
   color: #ca3f3f;
 }
 
-/* line 73, ../Portfolio/scss/sections/_coding.scss */
+/* line 117, ../Portfolio/scss/sections/_coding.scss */
 .func {
   color: #db8a4c;
 }
 
-/* line 76, ../Portfolio/scss/sections/_coding.scss */
+/* line 120, ../Portfolio/scss/sections/_coding.scss */
 .func-call {
   color: #ffe4a6;
 }
 
-/* line 79, ../Portfolio/scss/sections/_coding.scss */
+/* line 123, ../Portfolio/scss/sections/_coding.scss */
 .method {
   color: #ad84fa;
 }
 
-/* line 82, ../Portfolio/scss/sections/_coding.scss */
+/* line 126, ../Portfolio/scss/sections/_coding.scss */
 .doc {
   color: #fde703;
 }

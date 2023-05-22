@@ -3,6 +3,13 @@
     @include center;
     border: 1px solid $color-secondary;
     border-radius: 5px;
+    margin-bottom: 30px;
+    @include mq(medium) {
+        width: 90%;
+    }
+    @include mq(large) {
+        width: 80%;
+    }
 }
 
 .code-item-header {
@@ -12,10 +19,13 @@
     }
 }
 .code-item-text {
-    @include p(0.8rem, 1.1rem, 2px);
+    @include p(0.7rem, 1rem, 2px);
     font-weight: $font-weight--light;
-    @include mq(large) {
-        @include p(1rem, 1.4rem, 1px);
+    @include mq(small) {
+        @include p(.8rem, 1.1rem, 2px);
+    }
+    @include mq(medium) {
+        @include p(.9rem, 1.2rem, 1px);
         margin: 20px 0;
     }
 }
@@ -26,27 +36,61 @@
     font-size: 0.7rem;
     line-height: 1rem;
     overflow: scroll;
-    height: 250px;
+    height: 300px;
     @include mq(large){
         font-size: .8rem;
         line-height: 1.2rem;
-        height: 300px;
     }
 }
 
 // slider design 
-
-.slide-content {
-    width: 80%;
+.slider-nav {
+    @include center;
+    @include mq(large){
+        width: 80%;
+    }
+}
+.slider-for {
+    @include center;
+    @include mq(large) {
+        width: 80%;
+    }
 }
 .slide-text {
-    @include box-purple(600px);
+    @include box-purple(520px);
     @include center;
     border: 1px solid $color-secondary;
     border-radius: 5px;
+    margin-bottom: 20px;
     @include mq(small) {
         @include box-purple(400px);
     }
+    @include mq(medium) {
+        @include box-purple(420px);
+        width: 90%;
+    }
+    @include mq(large) {
+        @include box-purple(450px);
+        width: 80%;
+    }
+    @include mq(x-large) {
+        @include box-purple(350px);
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $black;
+    @include mq(medium){
+        font-size: 25px;
+    }
+    @include mq(large) {
+        font-size: 30px;
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 10px;
 }
 
 // span code colors 
