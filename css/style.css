@@ -1252,6 +1252,11 @@ a {
   padding-bottom: 10px;
 }
 
+/* line 96, ../Portfolio/scss/sections/_contact.scss */
+.suc-mess {
+  padding: 20px 0;
+}
+
 /* line 3, ../Portfolio/scss/sections/_about.scss */
 .about-section {
   height: auto;

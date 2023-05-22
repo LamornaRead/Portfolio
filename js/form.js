@@ -30,6 +30,7 @@ function validateForm() {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const success = document.getElementById('success');
 
     //first name
     if(firstName.length == 0) {
@@ -81,7 +82,8 @@ function validateForm() {
         let messageError = document.getElementById('message-error');
         messageError.innerHTML = '';
     }
-    alert("Contact Form Submitted.");
+    success.innerHTML = 'Submit Successful';
+    success.style.color = '#24d36e';
     document.addEventListener('submit', function(event) {
         event.preventDefault();
         event.target.reset();
