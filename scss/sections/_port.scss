@@ -5,7 +5,7 @@
     margin-bottom: 40px;
     @include mq(large) {
         width: 48%;
-        transition: transform .2s;
+        transition: transform .3s;
     }
 }
 
@@ -18,6 +18,9 @@
 
 .port-item:hover .info-text {
     display: block;
+    @media (max-width: $break-xlrg){
+        display: none;
+    }
 }
 //project image
 
@@ -29,16 +32,22 @@
         @include bk-image(280px);
     }
 }
+
 .text-img {
     @include heading(1.6rem);
     @include center;
     @include center-box;
     color: $white;
+    @media (max-width: $break-sml){
+        text-align: center;
+    }
 }
+
 .project-info {
     @include flex-center;
     background-color: rgba($color: #000000, $alpha: .8);
 }
+
 .info-text {
     display: none;
     @include center-box;
@@ -49,14 +58,35 @@
     text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
     width: 70%;
 }
+
+.info-text-two {
+    font-size: .9rem;
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+}
+
+
+.code-icons {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    @include mq(large) {
+        font-size: 1.8rem;
+    }
+    @include mq(x-large) {
+        font-size: 2rem;
+    }
+}
 //section Content 
+
 .port-text {
     padding: 20px 20px;  
 }
+
 .pro-heading {
    @include heading(1.2rem);
    margin-bottom: 10px;
 }
+
 .view-heading {
     @include heading(1rem, 1.8rem);
     &:hover {
