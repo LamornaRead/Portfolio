@@ -40,8 +40,13 @@
 
 
 .ham-logo {
+    height: 90px;
     background-color: $color-secondary;
     border-bottom: 1px solid $black;
+}
+.initials{
+    height: auto;
+    width: 90px;
 }
 .small-nav {
     position: fixed;
@@ -96,31 +101,9 @@
 
 //logo top 
 
-.nav-logo {
-    @include mq(large) {
-        @include rounded(150px);
-        @include center;
-        min-width: 95px;
-        background-color: $color-secondary;
-        box-shadow: 10px 10px 30px rgba($white, .9);
-    }
-}
-
 .logo-text {
-    @include heading-large(1.5rem, 3rem);
-    letter-spacing: 6px;
-    padding: 20px;
-    margin: 0;
-    height: auto;
-    @include mq(large) {
-        @include heading-large(3rem, 5rem);
-
-    }
-    @include mq(x-large) {
-        @include heading-large(4rem, 4.5rem);
-        width: 100%;
-        padding: 35px;
-    }
+    @include rounded(150px);
+    box-shadow: 10px 10px 30px rgba($white, .9);
 }
 
 

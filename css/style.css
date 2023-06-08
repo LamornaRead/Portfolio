@@ -752,11 +752,18 @@ a {
 
 /* line 42, ../Portfolio/scss/sections/_nav.scss */
 .ham-logo {
+  height: 90px;
   background-color: #291e39;
   border-bottom: 1px solid #000;
 }
 
-/* line 46, ../Portfolio/scss/sections/_nav.scss */
+/* line 47, ../Portfolio/scss/sections/_nav.scss */
+.initials {
+  height: auto;
+  width: 90px;
+}
+
+/* line 51, ../Portfolio/scss/sections/_nav.scss */
 .small-nav {
   position: fixed;
   top: -100%;
@@ -768,12 +775,12 @@ a {
   z-index: 1;
 }
 
-/* line 56, ../Portfolio/scss/sections/_nav.scss */
+/* line 61, ../Portfolio/scss/sections/_nav.scss */
 .small-nav.active {
   top: 0;
 }
 
-/* line 60, ../Portfolio/scss/sections/_nav.scss */
+/* line 65, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small {
   display: flex;
   flex-direction: row;
@@ -783,13 +790,13 @@ a {
   margin: 0;
 }
 
-/* line 68, ../Portfolio/scss/sections/_nav.scss */
+/* line 73, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul-small li {
   width: 40%;
   padding: 15px 0;
 }
 
-/* line 77, ../Portfolio/scss/sections/_nav.scss */
+/* line 82, ../Portfolio/scss/sections/_nav.scss */
 .nav-bar {
   background-color: #5b308b;
   color: #fff;
@@ -797,7 +804,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 77, ../Portfolio/scss/sections/_nav.scss */
+  /* line 82, ../Portfolio/scss/sections/_nav.scss */
   .nav-bar {
     float: left;
     position: -webkit-sticky;
@@ -814,64 +821,21 @@ a {
   }
 }
 
-@media (min-width: 992px) {
-  /* line 99, ../Portfolio/scss/sections/_nav.scss */
-  .nav-logo {
-    height: auto;
-    width: 100%;
-    max-width: 150px;
-    border-radius: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 95px;
-    background-color: #291e39;
-    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.9);
-  }
-}
-
-/* line 109, ../Portfolio/scss/sections/_nav.scss */
+/* line 104, ../Portfolio/scss/sections/_nav.scss */
 .logo-text {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  font-weight: 600;
-  margin: 0;
-  letter-spacing: 6px;
-  padding: 20px;
-  margin: 0;
   height: auto;
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.9);
 }
 
-@media (min-width: 992px) {
-  /* line 109, ../Portfolio/scss/sections/_nav.scss */
-  .logo-text {
-    text-transform: uppercase;
-    font-size: 3rem;
-    line-height: 5rem;
-    font-weight: 600;
-    margin: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* line 109, ../Portfolio/scss/sections/_nav.scss */
-  .logo-text {
-    text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    font-weight: 600;
-    margin: 0;
-    width: 100%;
-    padding: 35px;
-  }
-}
-
-/* line 129, ../Portfolio/scss/sections/_nav.scss */
+/* line 112, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul {
   margin-top: 80px;
 }
 
-/* line 132, ../Portfolio/scss/sections/_nav.scss */
+/* line 115, ../Portfolio/scss/sections/_nav.scss */
 .nav-ul li {
   line-height: 1.2rem;
   margin-top: 40px;
