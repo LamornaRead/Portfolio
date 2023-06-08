@@ -23,12 +23,16 @@
     padding-bottom: 50px;
     border-bottom: 1px dashed $color-secondary;
 }
+
 .contact-item-1 {
+    width: 100%;
     @include mq(large) {
         width: 29%;
     }
 }
+
 .contact-item-2 {
+    width: 100%;
     @include mq(large) {
         width: 69%;
     }

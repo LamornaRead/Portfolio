@@ -68,6 +68,19 @@ a {
         @include heading(1.6rem);
     }
 }
+
+.section-heading-two {
+    @include heading-small(1rem);
+    text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
+    margin-top: 0;
+    @include mq(small) {
+        @include heading-small(1.2rem);
+    }
+    @include mq(large) {
+        @include heading(1.3rem);
+    }
+}
+
 .section-heading-small{
     @include heading-small(1rem);
     text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
