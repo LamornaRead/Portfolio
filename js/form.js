@@ -21,17 +21,91 @@ const countCharacters = () => {
 
 textArea.addEventListener("input", countCharacters);
 
-// //form function
+// form function vars
+
+
+// const firstName = document.getElementById('fname').value;
+// const lastName = document.getElementById('lname').value;
+// const email = document.getElementById('email').value;
+// const subject = document.getElementById('subject').value;
+// const message = document.getElementById('message');
+// const success = document.getElementById('success');
+// const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+// const messageErr = document.getElementById('messageErr');
+
+
+
+function validateForm() {
+    var fields = new Array(); 
+    var fields = [document.getElementById('fname'), 
+                    document.getElementById('lname'),
+                    document.getElementById('email'),
+                    document.getElementById('subject'),
+                    document.getElementById('message')
+                    ];
+    var errMessage = new Array();
+    var errMessage = [document.getElementById('fnameErr'),
+                        document.getElementById('lnameErr'), 
+                        document.getElementById('emailErr'), 
+                        document.getElementById('subjectErr'),
+                        document.getElementById('messageErr')
+                    ];
+    var err = 0;
+    for (var i = 0; i < fields.length; i++) {
+        if(fields[i].value == "") {
+            err++
+            fields[i].style.border = '1px solid red';
+            fields[i].style.boxShadow = '0 0 20px red';
+            errMessage[i].innerHTML = `Please fill in ${fields[i].name}`;
+        } else {
+            fields[i].style.boxShadow = '';
+            fields[i].style.border = '';
+            errMessage[i].innerHTML = '';
+        }
+    }
+
+
+    if (err === 0) {
+        success.innerHTML = 'Submit Successful';
+        success.style.color = '#24d36e';
+        console.log('form success');
+    } else {
+        success.innerHTML = 'Fill Out Form Correctly';
+        success.style.color = 'red';
+        console.log('form failed');
+        return false;
+    }
+
+    document.addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.target.reset();
+    });
+    return true;
+}
+
+
+// kept for reference not in use //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// function checkMessage() {    
+//     if(message.value.length <= 140) {
+//         console.log('message false');
+//         message.style.boxShadow = '0 0 20px red';
+//         message.style.border = '1px solid red';
+//         messageErr.innerHTML = `Please fill in ${message.name}`;
+//     return false
+//     }
+//     if(message.value.length > 140) {
+//             message.style.boxShadow = '';
+//             message.style.border = '';
+//             messageErr.innerHTML = '';
+//             console.log('message true');
+//     }
+// }
+
+// //form function to check one at a time
 
 // function validateForm() {
-//     const firstName = document.getElementById('fname').value;
-//     const lastName = document.getElementById('lname').value;
-//     const email = document.getElementById('email').value;
-//     const subject = document.getElementById('subject').value;
-//     const message = document.getElementById('message').value;
-//     const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-//     const success = document.getElementById('success');
-
 //     //first name
 //     if(firstName.length == 0) {
 //         let fnameError = document.getElementById('firstname-error');
@@ -90,83 +164,3 @@ textArea.addEventListener("input", countCharacters);
 //     });    
 //     return true;   
 // }
-
-
-const firstName = document.getElementById('fname').value;
-const lastName = document.getElementById('lname').value;
-const email = document.getElementById('email').value;
-const subject = document.getElementById('subject').value;
-const message = document.getElementById('message').value;
-const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const success = document.getElementById('success');
-
-
-function checkEmpty() {
-    if(firstName.length == 0 ) {
-        let fnameError = document.getElementById('firstname-error');
-        fnameError.innerHTML = 'Please Enter First Name';
-        return true;
-    } 
-    if(lastName.length == 0) {
-        let lnameError = document.getElementById('lastname-error');
-        lnameError.innerHTML = 'Please Enter Last Name';
-        return true;
-    }
-    if(!emailFormat.test(email) || email.length == 0) {
-        let emailError = document.getElementById('email-error');
-        emailError.innerHTML = 'Please Enter A Valid Email';
-        return true;
-    }
-    if(subject.length == 0) {
-        let subjectError = document.getElementById('subject-error');
-        subjectError.innerHTML = 'Please Enter A Subject';
-        return true;
-    }
-    if(message.length <= 140) {
-        let messageError = document.getElementById('message-error');
-        messageError.innerHTML = 'Your Message Is Too Short';
-        return true;
-    } else {
-        return false
-    }
-}
-
-function checkFilled() {
-    if(firstName.length > 0) {
-        let fnameError = document.getElementById('firstname-error');
-        fnameError.innerHTML = '';
-    }
-
-    if(lastName.length > 0) {
-        let fnameError = document.getElementById('lastname-error');
-        fnameError.innerHTML = '';
-    }
-    if(emailFormat.test(email) || email.length > 0) {
-        let emailError = document.getElementById('email-error');
-        emailError.innerHTML = '';
-    }
-    if(subject.length > 0) {
-        let subjectError = document.getElementById('subject-error');
-        subjectError.innerHTML = '';
-    }
-
-    if(message.length > 140) {
-        let messageError = document.getElementById('message-error');
-        messageError.innerHTML = '';
-    }
-}
-
-
-function validateForm() {
-     if(checkEmpty() === true) {
-        return false;
-     }
-     checkFilled();
-    success.innerHTML = 'Submit Successful';
-    success.style.color = '#24d36e';
-    document.addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.target.reset();
-    });    
-    return true;   
-}
