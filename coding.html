@@ -95,7 +95,7 @@
 <span class="com">// animated text function </span>
 
 <span class="key">function</span> <span class="func">typeWriterHeader</span>() {
-    <span class="key">if</span> (<span class="var">headerLength</span> <span class="op">&#60;</span> <span class="var">headerLength</span>.<span class="method">length</span>) {
+    <span class="key">if</span> (<span class="var">headerLength</span> <span class="op">&#60;</span> <span class="var">headerText</span>.<span class="method">length</span>) {
         <span class="doc">document</span>.<span class="func">getElementById</span>(<span class="string">'type-header'</span>).<span class="method">innerHTML</span> <span class="op">+=</span> <span class="var">headerText</span>.<span class="func">charAt</span>(<span class="var">headerLength</span>);
         <span class="var">headerLength</span><span class="op">++</span>;
         <span class="func">setTimeout</span>(<span class="func-call">typeWriterHeader</span>, <span class="var">headerSpeed</span>);
