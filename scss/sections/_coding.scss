@@ -127,3 +127,117 @@
     color: #fde703;
 }
 
+
+/// data base challange styling ///////////////////
+
+//main
+
+.data-display {
+    @include box-purple;
+    @include box;
+    margin-top: 100px;
+    @include mq(large) {
+        padding: 40px;
+    }
+}
+
+//img
+
+.data-img-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.data-img {
+    @include center;
+    min-width: 50px;
+    max-width: 600px;
+    width: 100%;
+}
+
+// explantaion text
+
+
+.data-heading {
+    font-size: 1.2rem;
+    font-weight: $font-weight--light;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @include mq(large) {
+        font-size: 1.6rem;
+        font-weight: $font-weight--regular;
+    }
+}
+
+.data-text{
+    font-size: .8rem;
+    font-weight: $font-weight--light;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    margin: 20px 0;
+    @include mq(medium) {
+        font-size: 1rem;
+        margin: 30px 0;
+    }
+    @include mq(x-large) {
+        font-size: .8rem;
+        margin: 15px 0;
+    }
+}
+
+// datbase code
+
+.database-code {
+    margin: 40px 0;
+}
+
+.data-snippet {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    overflow: scroll;
+    height: 200px;
+        @include mq(large){
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+}
+
+// data table 
+
+.table-img-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table-img {
+    min-width: 50px;
+    max-width: 600px;
+    width: 100%;
+}
+
+// large display //
+
+.large-display {
+    @include mq(x-large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+
+.data-info {
+    @include mq(x-large) {
+        width: 45%;
+    }
+}
+
+.data-table {
+    @include mq(x-large) {
+        margin-top: 80px;
+    }
+}

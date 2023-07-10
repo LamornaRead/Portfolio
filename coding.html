@@ -265,8 +265,66 @@
                             </div> 
                         </div>
                     </div>
-                </div>    
+                </div>   
             </div>
+            <div class="data-display">
+                <div class="container-heading">
+                    <h3 class="small-heading">Database Example</h3>
+                </div>
+
+                <div>
+                    <div class="data-img-con">
+                        <img class="data-img" src="images/coding examples/movie-database.png" alt="Movie database table.">
+                    </div>
+
+                    <div class="large-display">
+
+                        <div class="data-info">
+                            <div class="container-heading">
+                                <h4 class="data-heading">My Query</h4>
+                            </div>
+                            <p class="data-text">In my query I worked from a senario, where I am a student that needs to write about female actors with high review ratings and what makes their movies popular.</p>
+                            <p class="data-text">I used a database to find the movies and then I could use the results to do research. I would use the results to find the reviews for those movies online.</p>
+                            <p class="data-text">First I selected from the actors table to display the first and last names as one full column.</p>
+                            <p class="data-text">Then I joined on to the movie cast table so I could access the movie ID.</p>
+                            <p class="data-text">Next I joined to the movie table so I could find out the movie titles and the year they were released.</p>
+                            <p class="data-text">Then I joined on to the movie genre table so I could join on to the genre table to find out what genre the movie was so I could write about it in my report.</p>
+                            <p class="data-text">Next I used a sub query to join to the ratings table to find the actors assosiated to movies with a review rating above 8 stars.</p>
+                            <p class="data-text">Lastly I added the condition of the actors gender to be female, so that I could find the actresses I wanted to research.</p>
+                            <p class="data-text">I used an alias for each column I wanted to display so that the table produced was easy to read.</p>
+                        </div>
+
+                        <div class="data-info">
+                            <div class="database-code">
+                                <div class="container-heading">
+                                    <h3 class="small-heading">The Code</h3>
+                                </div>
+                                <pre class="data-snippet">
+                                    <code>          
+SELECT act_fname || ' ' || act_lname AS "Actor", movie.mov_year AS "Release Date", movie.mov_title AS "Film Title", genres.gen_title AS "Genre"
+FROM actor
+INNER JOIN movie_cast ON actor.act_id = movie_cast.act_id
+INNER JOIN movie ON movie_cast.mov_id = movie.mov_id
+INNER JOIN movie_genres On movie.mov_id = movie_genres.mov_id
+INNER JOIN genres ON movie_genres.gen_id = genres.gen_id
+WHERE movie.mov_id IN (SELECT mov_id FROM rating WHERE rev_stars >= ROUND(8,0))
+AND act_gender = 'F';
+                                    </code>
+                                </pre>
+                            </div>
+                            
+                            <div class="data-table">
+                                <div class="container-heading">
+                                    <h3 class="small-heading">The Table Produced</h3>
+                                </div>
+                                <div class="table-img-con">
+                                    <img class="table-img" src="images/coding examples/chrome_ayDgKJbuM4.png" alt="data table">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
     <script src="js/jquery3.6.4.js"></script>
